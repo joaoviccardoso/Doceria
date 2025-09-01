@@ -1,0 +1,24 @@
+:root {
+    /*fontes*/
+    --font-primary: "Pacifico", cursive;
+    --font-secondary: "Quicksand", sans-serif;
+
+    /*fontes peso*/
+    --font-size-xs: 0.75rem;   
+    --font-size-sm: 0.875rem;  
+    --font-size-md: 1rem;      
+    --font-size-lg: 1.25rem;  
+    --font-size-xl: 1.5rem;   
+    --font-size-2xl: 2rem;   
+    --font-size-3xl: 5rem;
+
+    /*Cores*/
+    --rosa-escuro: #FF5FA2;
+    --rosa-backGround: #FFF0F5;
+    --rosa-cards: #FF95B7;
+    --rosa-btn: #F85E8A;
+    --roxo-banner: #B76DFF;
+    --roxo-card: #D1A2FF;
+    --letra-clara: #FFF;
+    --letra-escura: #212121;
+}
