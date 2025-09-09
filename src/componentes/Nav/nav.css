@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem 3rem;
+    background-color: var(--rosa-nav);
+}
+
+.container-loginEhOffCanvas{
+    display: flex;
+    gap: 1rem;
+}
+
+.container-login{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container-login h3{
+    font-size: var(--font-size-xl);
+    margin: 0;
+}
