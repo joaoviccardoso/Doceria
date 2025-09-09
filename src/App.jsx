@@ -4,6 +4,7 @@ import Cardapio from './paginas/Cardapio'
 import LandingPage from './paginas/LandingPage'
 import Cabecalho from './componentes/Nav'
 import Footer from './componentes/Footer'
+import PaginaNaoEncontrada from './paginas/paginaNaoEncontrada'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/cardapio' element={<Cardapio/>}/>
+          <Route path='*' element={<PaginaNaoEncontrada/>}/>
         </Routes>
 
       <Footer/>

@@ -1,39 +1,57 @@
-Sistema para Doceria 🍰🧁🎂
-Descrição
+🍰 Sistema para Doceria 🧁🎂
+📖 Descrição
 
-Este projeto é um sistema completo para gestão de uma doceria, desenvolvido para melhorar a experiência do cliente e facilitar o gerenciamento dos produtos, pedidos e clientes pelo administrador.
+Este projeto é um sistema completo para gestão de uma doceria, desenvolvido com foco em proporcionar uma ótima experiência ao cliente e facilitar o gerenciamento de produtos, pedidos e clientes pelo administrador.
 
-O sistema possui dashboards intuitivos, uma landing page para apresentação da doceria e funcionalidades que permitem acompanhar pedidos, histórico de compras e mensagens de clientes.
+A aplicação conta com dashboards intuitivos, uma landing page de apresentação e funcionalidades que permitem acompanhar pedidos em tempo real, visualizar histórico de compras e manter comunicação direta entre clientes e administradores.
 
-Funcionalidades
-Dashboard do Cliente
+✨ Funcionalidades
+👩‍🍳 Dashboard do Cliente
 
 Visualização de pedidos em andamento e finalizados
 
-Histórico de compras
+Consulta ao histórico de compras
 
-Envio e recebimento de mensagens
+Envio e recebimento de mensagens com a doceria
 
-Dashboard do Administrador
+🛠️ Dashboard do Administrador
 
-Gestão de produtos (adicionar, editar e remover itens)
+Gestão de produtos (adicionar, editar e remover itens do cardápio)
 
 Gestão de clientes e pedidos
 
-Relatórios de vendas e estoque
+Geração de relatórios de vendas e estoque
 
-Configurações do sistema
+Configurações gerais do sistema
 
-Landing Page
+🌐 Landing Page
 
-Apresentação da doceria
+Apresentação da doceria e sua proposta
 
-Visualização do cardápio
+Visualização do cardápio completo
 
-Informações de contato
+Informações de contato e localização
 
-Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas
 
-HTML5/CSS3/React.js
+HTML5
 
-Possibilidade futura de integração com backend
+CSS3
+
+React.js
+
+(Integração futura com backend para persistência de dados)
+
+🚀 Futuras Melhorias
+
+Integração com API de pagamento online
+
+Autenticação e autorização de usuários
+
+Implementação de notificações em tempo real
+
+Sistema de avaliações e feedback dos clientes
+
+📌 Objetivo do Projeto
+
+Criar uma solução digital moderna e funcional para facilitar a gestão de uma doceria, garantindo praticidade para o administrador e uma experiência diferenciada para os clientes.
