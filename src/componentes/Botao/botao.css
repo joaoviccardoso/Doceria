@@ -1,0 +1,11 @@
+.btn-banner{
+    background-color: var(--rosa-cards);
+    font-size: var(--font-size-2xl);
+    font-family: var(--font-secondary);
+    padding: 1rem 3rem;
+    border-radius: 16px;
+}
+
+.btn-banner:hover{
+    background-color: var(--rosa-btn);
+}
