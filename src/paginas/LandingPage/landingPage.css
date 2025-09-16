@@ -1,0 +1,6 @@
+.container-cardInformacao{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 11rem;
+    border-radius: 16px;
+}

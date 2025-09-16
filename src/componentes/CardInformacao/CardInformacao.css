@@ -1,0 +1,38 @@
+.card-informacao1, .card-informacao2, .card-informacao3{
+    height: 500px;
+    background-color: var(--rosa-cards);
+    padding: .8rem;
+}
+
+.card-informacao1, .card-informacao3{
+    background-color: var(--roxo-card);
+}
+
+.card-informacao1{
+    border-radius: 16px 0 0 16px;
+}
+
+.card-informacao3{
+    border-radius: 0px 16px 16px 0px;
+}
+
+.logo-img{
+    width: 80px;
+}
+
+.cardInfo-titulo{
+    font-size: var(--font-size-2xl);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    color: var(--letra-clara);
+    line-height: 1.1;
+    margin: .4rem;
+}
+
+.cardInfo-texto{
+    font-size: var(--font-size-lg);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    color: var(--letra-clara);
+    margin: .4rem;
+}
