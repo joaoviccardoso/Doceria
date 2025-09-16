@@ -3,7 +3,7 @@ import './banner.css'
 
 function Banner({titulo,texto ,srcImg, alt}){
     return (
-        <header className='banner-header'>
+        <section className='banner-header'>
             <div className='banner-containerIntroducao'>
                 <h1>{titulo}</h1>
                 <p>{texto}</p>
@@ -20,7 +20,7 @@ function Banner({titulo,texto ,srcImg, alt}){
                     />
                 </div>
             </div>
-        </header>
+        </section>
     )
 }
 

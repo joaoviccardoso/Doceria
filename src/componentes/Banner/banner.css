@@ -22,7 +22,7 @@
 }
 
 .banner-containerIntroducao h1{
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-4xl);
     font-family: var(--font-primary);
 }
 

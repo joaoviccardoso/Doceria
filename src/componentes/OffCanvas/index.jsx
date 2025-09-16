@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import './offCanvas.css'
 
 function OffCanvas(){
-    console.log(location)
     return(
         <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">

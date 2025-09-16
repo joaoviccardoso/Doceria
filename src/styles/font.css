@@ -10,7 +10,8 @@
     --font-size-lg: 1.25rem;  
     --font-size-xl: 1.5rem;   
     --font-size-2xl: 2rem;   
-    --font-size-3xl: 5rem;
+    --font-size-3xl: 2.8rem;
+    --font-size-4xl: 5rem;
 
     /*Cores*/
     --rosa-nav: #FFF2E3;
@@ -22,4 +23,8 @@
     --roxo-card: #D1A2FF;
     --letra-clara: #FFF;
     --letra-escura: #212121;
+
+    /*box shadow*/
+
+    --box-cards:rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }

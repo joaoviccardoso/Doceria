@@ -9,7 +9,10 @@ import PaginaNaoEncontrada from './paginas/paginaNaoEncontrada'
 function App() {
   return (
     <BrowserRouter>
-      <Cabecalho/>
+      <header>
+        <Cabecalho/>
+      </header>
+      
 
         <Routes>
           <Route path='/' element={<LandingPage/>}/>

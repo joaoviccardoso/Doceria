@@ -1,0 +1,19 @@
+.faixa-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--roxo-banner);
+    margin: 5rem 9rem;
+    padding: .3rem 0 ;
+    text-align: center;
+    box-shadow: var(--box-cards);
+}
+
+.faixa-titulo h3{
+    width: 800px;
+    font-size: var(--font-size-3xl);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    color: var(--letra-clara);
+}
