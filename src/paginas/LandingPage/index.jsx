@@ -2,6 +2,8 @@ import './landingPage.css';
 import Banner from '../../componentes/Banner';
 import CardInformacao from '../../componentes/CardInformacao';
 import Faixa from '../../componentes/Faixa';
+import Botao from '../../componentes/Botao';
+import ProdutoLanding from '../../componentes/CardProdutoLanding';
 
 function LandingPage(){
     return (
@@ -38,6 +40,46 @@ function LandingPage(){
                         texto={'Receitas preparadas com carinho, ingredientes frescos e o sabor autêntico que traz lembranças boas em cada mordida.'}
                         className={'card-informacao3'}
                         alt={'logo de um brigadeiro'}
+                    />
+                </div>
+            </section>
+
+            <section className='container-maisInformacao'>
+                <div className='banner-fazerOrcamento'>
+                    <span>
+                        <h4>Delícias feitas com carinho!</h4>
+                        <p>Confira alguns dos nossos doces mais pedidos:</p>
+                    </span>
+                    <span>
+                        <h4>Aqui, cada doce é especial.</h4>
+                        <p>Usamos ingredientes selecionados, frescos e de alta qualidade para garantir o sabor que conquista no primeiro pedaço. Seu momento merece o melhor!</p>
+                    </span>
+
+                    <img src="./src/assets/MocaSegurandoUmBolo.png" alt="Mulher segurando um bolo " />
+                    <Botao
+                        className={'btn-fazerOrcamento'}
+                        text={'Fazer Orçamento'}
+                    />
+
+                </div>
+                <div className='div-cardProdutos'>
+                    <ProdutoLanding
+                        img={'./src/assets/Brigadeiro (2).png'}
+                        categoria={'Chocolate'}
+                        nome={'Brigadeiro'}
+                        descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
+                    />
+                     <ProdutoLanding
+                        img={'./src/assets/Brigadeiro (2).png'}
+                        categoria={'Chocolate'}
+                        nome={'Brigadeiro'}
+                        descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
+                    />
+                     <ProdutoLanding
+                        img={'./src/assets/Brigadeiro (2).png'}
+                        categoria={'Chocolate'}
+                        nome={'Brigadeiro'}
+                        descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
                     />
                 </div>
             </section>

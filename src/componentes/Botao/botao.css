@@ -9,3 +9,22 @@
 .btn-banner:hover{
     background-color: var(--rosa-btn);
 }
+
+.btn-fazerOrcamento{
+    background-color: var(--roxo-banner);
+    font-size: var(--font-size-lg);
+    border-radius: 8px;
+    padding: .8rem 5rem;
+    z-index: 1;
+}
+
+.verCardapio{
+    background-color: var(--rosa-btn);
+    font-size: var(--font-size-md);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    border-radius: 16px;
+    padding: .5rem 0;
+    width: 150px;
+    
+}
