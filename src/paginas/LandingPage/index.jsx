@@ -1,11 +1,22 @@
 import './landingPage.css';
+import { useState, useEffect, useRef } from 'react';
 import Banner from '../../componentes/Banner';
 import CardInformacao from '../../componentes/CardInformacao';
 import Faixa from '../../componentes/Faixa';
 import Botao from '../../componentes/Botao';
 import ProdutoLanding from '../../componentes/CardProdutoLanding';
+import RegistroDePedidosFeitos from '../../componentes/RegistroDePedidosFeitos';
+import { motion } from "framer-motion"
 
 function LandingPage(){
+    const carrossel = useRef()
+    const [width, setWidth] = useState(0)
+
+    useEffect(() => {
+        console.log(carrossel.current?.scrollWidth, carrossel.current?.offsetWidth)
+        setWidth(carrossel.current?.scrollWidth - carrossel.current?.offsetWidth)
+    },[])
+
     return (
         <main>  
             <Banner
@@ -14,7 +25,9 @@ function LandingPage(){
                 srcImg={'./src/assets/BoloDeMorangoSemFundo.png'}
                 alt={'Bolo de Morango'}
             />
+            <img className='backgroundMorango' src="./src/assets/morango-removebg-preview.png" alt="background morango" />
             <section className='container-informacao'>
+                
                 <Faixa
                     texto={'Vem entender por que nossos doces'}
                     texto2={'conquistam corações'}
@@ -81,6 +94,22 @@ function LandingPage(){
                         nome={'Brigadeiro'}
                         descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
                     />
+                </div>
+            </section>
+
+            <section className='container-registro'>
+                <h3>Alguns Registros...</h3>
+                <p>Confira alguns de nossos pedidos e veja como cada doce pode contar historias únicas e tornar momentos inesquecíveis.</p>
+                <div className='container-carrosel'>
+                    <motion.div ref={carrossel} className='carrossel'>
+                        <motion.div 
+                            className='inner'
+                            drag='x'
+                            dragConstraints={{right: 0, left: -width}}
+                        >
+                            <RegistroDePedidosFeitos/>
+                        </motion.div>
+                    </motion.div>
                 </div>
             </section>
         </main>

@@ -64,3 +64,48 @@
     width: 50%;
 }
 
+.container-registro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  background-color: var(--roxo-banner);
+}
+
+.container-registro h3{
+  font-family: var(--font-primary);
+  font-size: var(--font-size-3xl);
+  font-weight: 500;
+  color: var(--letra-clara);
+  margin-top: 2rem;
+}
+
+.container-registro p{
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  max-width: 500px;
+  text-align: center;
+  color: var(--letra-clara);
+}
+
+.container-carrosel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 5.5rem;
+}
+
+.inner{
+  display: flex;
+  gap: 6rem;
+}
+
+.carrossel{
+  cursor: grab;
+  overflow: hidden;
+}
+
