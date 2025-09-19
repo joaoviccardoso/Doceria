@@ -1,0 +1,17 @@
+.input-formulario{
+    height: 50px;
+    border: solid 2px var(--roxo-banner);
+    border-radius: 8px;
+    box-shadow: var( --box-cards);
+    transition: all .3s ease;
+}
+
+.inputMensagem{
+    height: 150px;
+}
+
+.input-formulario:focus{
+    transform: scale(1.05);
+    outline: none;
+    border: solid 2px var(--rosa-btn)
+}

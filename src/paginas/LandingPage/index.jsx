@@ -7,6 +7,7 @@ import Botao from '../../componentes/Botao';
 import ProdutoLanding from '../../componentes/CardProdutoLanding';
 import RegistroDePedidosFeitos from '../../componentes/RegistroDePedidosFeitos';
 import { motion } from "framer-motion"
+import EntreContado from '../../componentes/EntreContado';
 
 function LandingPage(){
     const carrossel = useRef()
@@ -111,6 +112,16 @@ function LandingPage(){
                         </motion.div>
                     </motion.div>
                 </div>
+            </section>
+
+            <img className='backgroundMorango' src="./src/assets/morango-removebg-preview.png" alt="background morango" />
+            <Faixa
+                texto={'Fale com a gente e faça sua encomenda'}
+                texto2={'com carinho e agilidade.'}
+            />
+
+            <section className='secao-entreContato'>
+                <EntreContado/>
             </section>
         </main>
         

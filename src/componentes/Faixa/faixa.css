@@ -11,7 +11,6 @@
 }
 
 .faixa-titulo h3{
-    width: 800px;
     font-size: var(--font-size-3xl);
     font-family: var(--font-secondary);
     font-weight: 500;
