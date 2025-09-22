@@ -8,15 +8,6 @@
     z-index: 1;
 }
 
-.backgroundMorango{
-  position: absolute;
-  top: 950px;
-  left: -50px;
-  z-index: 0;
-  pointer-events: none;
-}
-
-
 .banner-containerIntroducao{
     display: flex;
     flex-direction: column;

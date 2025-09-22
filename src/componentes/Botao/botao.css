@@ -26,5 +26,12 @@
     border-radius: 16px;
     padding: .5rem 0;
     width: 150px;
-    
+}
+
+.botao-submit{
+    background-color: var(--roxo-banner);
+    color: var(--letra-clara);
+    padding: .5rem 2rem;
+    border-radius: 12px;
+    font-weight: 500;
 }

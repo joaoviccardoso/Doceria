@@ -65,12 +65,22 @@
 }
 
 .container-registro{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: .5rem;
   background-color: var(--roxo-banner);
+}
+
+.backgroundMorango2{
+    position: absolute; /* filho absoluto */
+    top: -280px;  /* ajusta a posição dentro do pai */
+    right: 80px;
+    width: 300px;
+    pointer-events: none;
+    z-index: -1;
 }
 
 .container-registro h3{

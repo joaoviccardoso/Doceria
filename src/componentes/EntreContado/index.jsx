@@ -6,7 +6,7 @@ function EntreContado(){
     return(
         <div className='entre-contato'>
             <form className='container-formulario'>
-                <h4>Entre em Contato</h4>
+                <h4 className='titulo-entreContata'>Entre em Contato</h4>
                 <label>Nome:</label>
                 <Input
                     tipo={'text'}
@@ -34,6 +34,7 @@ function EntreContado(){
             <div className='container-img-contato'>
                 <img src="./src/assets/RapazComUmBolaNaMao.png" alt="Rapaz segurando um bolo para entrega" />
             </div>
+            <img className='backgroundMorango3' src="./src/assets/morango-removebg-preview.png" alt="background morango" />
         </div>
     )
 }

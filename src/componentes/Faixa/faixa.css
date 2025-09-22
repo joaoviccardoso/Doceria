@@ -10,6 +10,19 @@
     box-shadow: var(--box-cards);
 }
 
+.container-faixa{
+    position: relative;
+}
+
+.backgroundMorango1{
+    position: absolute; /* filho absoluto */
+    top: -110px;  /* ajusta a posição dentro do pai */
+    left: 80px;
+    width: 300px;
+    pointer-events: none;
+    z-index: -1;
+}
+
 .faixa-titulo h3{
     font-size: var(--font-size-3xl);
     font-family: var(--font-secondary);

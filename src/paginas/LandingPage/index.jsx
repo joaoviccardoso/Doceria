@@ -26,7 +26,7 @@ function LandingPage(){
                 srcImg={'./src/assets/BoloDeMorangoSemFundo.png'}
                 alt={'Bolo de Morango'}
             />
-            <img className='backgroundMorango' src="./src/assets/morango-removebg-preview.png" alt="background morango" />
+            
             <section className='container-informacao'>
                 
                 <Faixa
@@ -56,6 +56,7 @@ function LandingPage(){
                         alt={'logo de um brigadeiro'}
                     />
                 </div>
+                
             </section>
 
             <section className='container-maisInformacao'>
@@ -96,9 +97,11 @@ function LandingPage(){
                         descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
                     />
                 </div>
+                
             </section>
 
             <section className='container-registro'>
+                <img className='backgroundMorango2' src="./src/assets/morango-removebg-preview.png" alt="background morango" />
                 <h3>Alguns Registros...</h3>
                 <p>Confira alguns de nossos pedidos e veja como cada doce pode contar historias únicas e tornar momentos inesquecíveis.</p>
                 <div className='container-carrosel'>
@@ -114,7 +117,6 @@ function LandingPage(){
                 </div>
             </section>
 
-            <img className='backgroundMorango' src="./src/assets/morango-removebg-preview.png" alt="background morango" />
             <Faixa
                 texto={'Fale com a gente e faça sua encomenda'}
                 texto2={'com carinho e agilidade.'}
