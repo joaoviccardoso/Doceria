@@ -1,0 +1,54 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--roxo-banner);
+    margin-top: 5rem;
+}
+
+.secao-informacao-contato{
+    display: flex;
+    justify-content: space-around;
+    gap: 8rem;
+    margin-top: 3rem;
+}
+
+.icone-contato{
+    width: 60px;
+    height: 60px;
+}
+
+.footer h5, h6, p, li{
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-2xl);
+    color: var(--letra-clara);
+    font-weight: 700;
+}
+
+.footer h6, p, li{
+    font-size: var(--font-size-lg);
+}
+
+footer ul{
+    padding: 0;
+}
+
+.container-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.cotainer-entrarEmContato{
+    display: flex;
+    gap: .8rem;
+}
+
+.ul-redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}

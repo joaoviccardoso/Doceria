@@ -6,14 +6,14 @@
     border-radius: 16px;
     background-color: var(--letra-clara);
     width: 100%;
-    max-width: 75rem;
+    max-width: 70rem;
     box-shadow: var(--box-cards);
 }
 
 .backgroundMorango3{
-    position: absolute; /* filho absoluto */
-    top: 400px;  /* ajusta a posição dentro do pai */
-    right: -180px;
+    position: absolute; 
+    top: 400px;  
+    right: -150px;
     width: 300px;
     pointer-events: none;
     z-index: -1;

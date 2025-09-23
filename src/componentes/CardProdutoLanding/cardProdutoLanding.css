@@ -6,6 +6,8 @@
     box-shadow: var(--box-cards);
     background-color: var(--rosa-cards);
     height: 325px;
+    width: 100%;
+    max-width: 700px;
 }
 
 .container-produtoLanding div{
