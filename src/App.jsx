@@ -5,6 +5,7 @@ import LandingPage from './paginas/LandingPage'
 import Cabecalho from './componentes/Nav'
 import Footer from './componentes/Footer'
 import PaginaNaoEncontrada from './paginas/paginaNaoEncontrada'
+import CadastroLogin from './paginas/CadastroLogin'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/cardapio' element={<Cardapio/>}/>
+          <Route path='/cadastro' element={<CadastroLogin/>}/>
           <Route path='*' element={<PaginaNaoEncontrada/>}/>
         </Routes>
 

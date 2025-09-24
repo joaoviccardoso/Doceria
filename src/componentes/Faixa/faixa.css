@@ -29,3 +29,33 @@
     font-weight: 500;
     color: var(--letra-clara);
 }
+
+/* Tablets e notebooks menores */
+@media (max-width: 1399px) {
+  
+}
+
+/* Tablets em modo retrato */
+@media (max-width: 1024px) {
+  
+}
+
+/* Celulares grandes */
+@media (max-width: 767px) {
+  
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .faixa-titulo{
+        margin: 5rem 0;
+    }
+
+    .faixa-titulo h3{
+       font-size: var(--font-size-xl); 
+    }  
+
+    .backgroundMorango1{
+        left: -80px;
+    }
+}

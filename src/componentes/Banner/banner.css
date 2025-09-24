@@ -93,8 +93,8 @@
 
   .container-img{
     position: absolute; /* permite manipular posição */
-    top: 280px; 
-    left: 35px; 
+    top: 210px; 
+    left: 0; 
     width: 100%; 
     height: 100%;
     z-index: 0; /* fica atrás */
