@@ -1,9 +1,9 @@
 import Botao from '../Botao'
 import './cardProdutoLanding.css'
 
-function ProdutoLanding({img, categoria, nome,descricao}){
+function ProdutoLanding({img, categoria, nome,descricao,aos}){
     return(
-        <div className='container-produtoLanding'>
+        <div data-aos={aos} className='container-produtoLanding'>
             <img className='img-produtoLanding' src={img} alt="Imagem De um Doce" />
             <div>
                 <span>

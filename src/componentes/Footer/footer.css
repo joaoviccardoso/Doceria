@@ -63,15 +63,24 @@ footer ul{
   
 }
 
-/* Celulares grandes */
+/* Tablets pequenos */
 @media (max-width: 767px) {
   
 }
 
-/* Celulares pequenos */
+/* Celulares grandes */
 @media (max-width: 480px) {
+    .footer{
+        padding: 1rem;
+    }
+
     .secao-informacao-contato{
         gap: 3rem;
         flex-direction: column;
     }
+}
+
+/* Celulares pequenos */
+@media (max-width: 410px) {
+  
 }

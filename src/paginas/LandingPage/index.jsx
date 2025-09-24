@@ -1,13 +1,15 @@
 import './landingPage.css';
 import { useState, useEffect, useRef } from 'react';
+import { motion } from "framer-motion"
 import Banner from '../../componentes/Banner';
 import CardInformacao from '../../componentes/CardInformacao';
 import Faixa from '../../componentes/Faixa';
 import Botao from '../../componentes/Botao';
 import ProdutoLanding from '../../componentes/CardProdutoLanding';
 import RegistroDePedidosFeitos from '../../componentes/RegistroDePedidosFeitos';
-import { motion } from "framer-motion"
+import AOS from 'aos';
 import EntreContado from '../../componentes/EntreContado';
+import "aos/dist/aos.css";
 
 function LandingPage(){
     const carrossel = useRef()
@@ -18,6 +20,13 @@ function LandingPage(){
         setWidth(carrossel.current?.scrollWidth - carrossel.current?.offsetWidth)
     },[])
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        })
+    },[]);
+
     return (
         <main>  
             <Banner
@@ -25,6 +34,7 @@ function LandingPage(){
                 texto={'Aqui, cada doce é feito com carinho, ingredientes fresquinhos e uma pitada de criatividade. Do famoso Morango do Amor aos nossos brigadeiros, brownies, cupcakes, tortas e muito mais, temos o sabor perfeito para cada momento especial.'}
                 srcImg={'./src/assets/BoloDeMorangoSemFundo.png'}
                 alt={'Bolo de Morango'}
+                aos={'zoom-in'}
             />
             
             <section className='container-informacao'>
@@ -40,6 +50,7 @@ function LandingPage(){
                         texto={'Transforme sua comemoração em um momento inesquecível com nossos doces feitos sob medida para encantar seus convidados.'}
                         className={'card-informacao1'}
                         alt={'logo de uma fatia de bolo'}
+                        aos={'fade-right'}
                     />
                     <CardInformacao
                         srcImg={'./src/assets/celular.png'}
@@ -47,6 +58,7 @@ function LandingPage(){
                         texto={'Peça seus doces favoritos sem sair de casa. Atendimento rápido, direto e cheio de carinho — do jeitinho que você merece.'}
                         className={'card-informacao2'}
                         alt={'logo de um celular'}
+                        aos={'fade-up'}
                     />
                     <CardInformacao
                         srcImg={'./src/assets/brigadeiro.png'}
@@ -54,13 +66,14 @@ function LandingPage(){
                         texto={'Receitas preparadas com carinho, ingredientes frescos e o sabor autêntico que traz lembranças boas em cada mordida.'}
                         className={'card-informacao3'}
                         alt={'logo de um brigadeiro'}
+                        aos={'fade-left'}
                     />
                 </div>
                 
             </section>
 
             <section className='container-maisInformacao'>
-                <div className='banner-fazerOrcamento'>
+                <div data-aos="fade-up" className='banner-fazerOrcamento'>
                     <span>
                         <h4>Delícias feitas com carinho!</h4>
                         <p>Confira alguns dos nossos doces mais pedidos:</p>
@@ -83,18 +96,21 @@ function LandingPage(){
                         categoria={'Chocolate'}
                         nome={'Brigadeiro'}
                         descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
+                        aos={'fade-left'}
                     />
                      <ProdutoLanding
                         img={'./src/assets/Brigadeiro (2).png'}
                         categoria={'Chocolate'}
                         nome={'Brigadeiro'}
                         descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
+                        aos={'fade-left'}
                     />
                      <ProdutoLanding
                         img={'./src/assets/Brigadeiro (2).png'}
                         categoria={'Chocolate'}
                         nome={'Brigadeiro'}
                         descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
+                        aos={'fade-left'}
                     />
                 </div>
                 
