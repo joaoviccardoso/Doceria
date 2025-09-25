@@ -1,3 +1,5 @@
+
+
 .entre-contato{
     position: relative;
     display: flex;
@@ -32,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('./src/assets/Ellipse.png');
+    background-image: url('../../assets/Ellipse.png');
     background-repeat: no-repeat;
     background-position: center;
     width: 50%;

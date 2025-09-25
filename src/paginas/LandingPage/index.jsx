@@ -11,7 +11,14 @@ import RegistroDePedidosFeitos from '../../componentes/RegistroDePedidosFeitos';
 import AOS from 'aos';
 import EntreContado from '../../componentes/EntreContado';
 import BoloDeMorango from "../../assets/BoloDeMorangoSemFundo.png";
-
+import iconeDeBolo from "../../assets/bolo.png";
+import iconeCelular from "../../assets/celular.png";
+import iconeBrigadeiro from "../../assets/brigadeiro.png";
+import mocaSegurandoUmBolo from "../../assets/MocaSegurandoUmBolo.png";
+import produtoBrigadeiro from "../../assets/Brigadeiro (2).png";
+import produtoBoloDeLimao from "../../assets/boloDeLimao.png";
+import ProdutoBoloDeMorango from "../../assets/BoloDeMorango.png";
+import backgroundMorango from "../../assets/morango-removebg-preview.png";
 
 function LandingPage(){
     const carrossel = useRef()
@@ -47,7 +54,7 @@ function LandingPage(){
                 />
                 <div className='container-cardInformacao'>
                     <CardInformacao
-                        srcImg={'./src/assets/bolo.png'}
+                        srcImg={iconeDeBolo}
                         titulo={'Encomendas para festas e eventos.'}
                         texto={'Transforme sua comemoração em um momento inesquecível com nossos doces feitos sob medida para encantar seus convidados.'}
                         className={'card-informacao1'}
@@ -55,7 +62,7 @@ function LandingPage(){
                         aos={'fade-right'}
                     />
                     <CardInformacao
-                        srcImg={'./src/assets/celular.png'}
+                        srcImg={iconeCelular}
                         titulo={'Faça seu pedido pelo WhatsApp e receba com conforto e praticidade.'}
                         texto={'Peça seus doces favoritos sem sair de casa. Atendimento rápido, direto e cheio de carinho — do jeitinho que você merece.'}
                         className={'card-informacao2'}
@@ -63,7 +70,7 @@ function LandingPage(){
                         aos={'fade-up'}
                     />
                     <CardInformacao
-                        srcImg={'./src/assets/brigadeiro.png'}
+                        srcImg={iconeBrigadeiro}
                         titulo={'Doces artesanais com aquele gostinho de feito em casa..'}
                         texto={'Receitas preparadas com carinho, ingredientes frescos e o sabor autêntico que traz lembranças boas em cada mordida.'}
                         className={'card-informacao3'}
@@ -85,7 +92,7 @@ function LandingPage(){
                         <p>Usamos ingredientes selecionados, frescos e de alta qualidade para garantir o sabor que conquista no primeiro pedaço. Seu momento merece o melhor!</p>
                     </span>
 
-                    <img src="./src/assets/MocaSegurandoUmBolo.png" alt="Mulher segurando um bolo " />
+                    <img src={mocaSegurandoUmBolo} alt="Mulher segurando um bolo " />
                     <Botao
                         className={'btn-fazerOrcamento'}
                         text={'Fazer Orçamento'}
@@ -94,21 +101,21 @@ function LandingPage(){
                 </div>
                 <div className='div-cardProdutos'>
                     <ProdutoLanding
-                        img={'./src/assets/Brigadeiro (2).png'}
+                        img={produtoBrigadeiro}
                         categoria={'Chocolate'}
                         nome={'Brigadeiro'}
                         descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
                         aos={'fade-left'}
                     />
                      <ProdutoLanding
-                        img={'./src/assets/Brigadeiro (2).png'}
+                        img={produtoBoloDeLimao}
                         categoria={'Chocolate'}
                         nome={'Brigadeiro'}
                         descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
                         aos={'fade-left'}
                     />
                      <ProdutoLanding
-                        img={'./src/assets/Brigadeiro (2).png'}
+                        img={ProdutoBoloDeMorango}
                         categoria={'Chocolate'}
                         nome={'Brigadeiro'}
                         descricao={'Irresistível, crocante e feito na hora. Peça agora e surpreenda seu paladar!'}
@@ -119,7 +126,7 @@ function LandingPage(){
             </section>
 
             <section className='container-registro'>
-                <img className='backgroundMorango2' src="./src/assets/morango-removebg-preview.png" alt="background morango" />
+                <img className='backgroundMorango2' src={backgroundMorango} alt="background morango" />
                 <h3>Alguns Registros...</h3>
                 <p>Confira alguns de nossos pedidos e veja como cada doce pode contar historias únicas e tornar momentos inesquecíveis.</p>
                 <div className='container-carrosel'>

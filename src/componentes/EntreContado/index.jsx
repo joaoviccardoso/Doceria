@@ -1,6 +1,8 @@
 import Botao from '../Botao'
 import Input from '../Input'
 import './entreContado.css'
+import rapazSegurandoUmBolo from "../../assets/RapazComUmBolaNaMao.png";
+import backgroundMorango from "../../assets/morango-removebg-preview.png";
 
 function EntreContado(){
     return(
@@ -32,9 +34,9 @@ function EntreContado(){
                 />
             </form>
             <div className='container-img-contato'>
-                <img src="./src/assets/RapazComUmBolaNaMao.png" alt="Rapaz segurando um bolo para entrega" />
+                <img src={rapazSegurandoUmBolo} alt="Rapaz segurando um bolo para entrega" />
             </div>
-            <img className='backgroundMorango3' src="./src/assets/morango-removebg-preview.png" alt="background morango" />
+            <img className='backgroundMorango3' src={backgroundMorango} alt="background morango" />
         </div>
     )
 }

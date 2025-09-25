@@ -1,4 +1,11 @@
 import './footer.css'
+import iconeWhatt from "../../assets/whattzap.png";
+import iconePhone from "../../assets/phone 1.png";
+import iconeEmail from "../../assets/envelope 1.png";
+import iconeIntagra from "../../assets/instagram-logo (1) 1.png";
+import iconeX from "../../assets/x-logo 1.png";
+import iconeFace from "../../assets/facebook-logo (1) 1.png";
+
 
 function Footer(){
     return(
@@ -8,7 +15,7 @@ function Footer(){
                     <h5>Atendimento</h5>
 
                     <div className='cotainer-entrarEmContato'>
-                        <img className='icone-contato' src="./src/assets/whattzap.png" alt="" />
+                        <img className='icone-contato' src={iconeWhatt} alt="icone" />
                         <div className='container-contato-texto'>
                             <h6>Whatsapp</h6>
                             <p>(19) 99999-9999</p>
@@ -16,7 +23,7 @@ function Footer(){
                     </div>
 
                     <div className='cotainer-entrarEmContato'>
-                        <img className='icone-contato' src="./src/assets/phone 1.png" alt="" />
+                        <img className='icone-contato' src={iconePhone} alt="icone telefone" />
                         <div className='container-contato-texto'>
                             <h6>Telefone:</h6>
                             <p>(19) 99999-9999</p>
@@ -24,7 +31,7 @@ function Footer(){
                     </div>
 
                     <div className='cotainer-entrarEmContato'>
-                        <img className='icone-contato' src="./src/assets/envelope 1.png" alt="" />
+                        <img className='icone-contato' src={iconeEmail} alt="icone de email" />
                         <div className='container-contato-texto'>
                             <h6>E-mail</h6>
                             <p>joao.viccardoso.silva@gmail.com</p>
@@ -44,9 +51,9 @@ function Footer(){
                 <div className='container-redes'>
                     <h5>Redes:</h5>
                     <ul className='ul-redes'>
-                        <li><img src="./src/assets/instagram-logo (1) 1.png" alt="logo instagram" /></li>
-                        <li><img src="./src/assets/x-logo 1.png" alt="logo do X" /></li>
-                        <li><img src="./src/assets/facebook-logo (1) 1.png" alt="logo do facebook" /></li>
+                        <li><img src={iconeIntagra} alt="logo instagram" /></li>
+                        <li><img src={iconeX} alt="logo do X" /></li>
+                        <li><img src={iconeFace} alt="logo do facebook" /></li>
                     </ul>
                 </div>
 
