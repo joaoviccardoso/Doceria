@@ -1,4 +1,5 @@
 import './landingPage.css';
+import "aos/dist/aos.css";
 import { useState, useEffect, useRef } from 'react';
 import { motion } from "framer-motion"
 import Banner from '../../componentes/Banner';
@@ -9,7 +10,8 @@ import ProdutoLanding from '../../componentes/CardProdutoLanding';
 import RegistroDePedidosFeitos from '../../componentes/RegistroDePedidosFeitos';
 import AOS from 'aos';
 import EntreContado from '../../componentes/EntreContado';
-import "aos/dist/aos.css";
+import BoloDeMorango from "../../assets/BoloDeMorangoSemFundo.png";
+
 
 function LandingPage(){
     const carrossel = useRef()
@@ -32,7 +34,7 @@ function LandingPage(){
             <Banner
                 titulo={'O sabor que conquista corações'}
                 texto={'Aqui, cada doce é feito com carinho, ingredientes fresquinhos e uma pitada de criatividade. Do famoso Morango do Amor aos nossos brigadeiros, brownies, cupcakes, tortas e muito mais, temos o sabor perfeito para cada momento especial.'}
-                srcImg={'./src/assets/BoloDeMorangoSemFundo.png'}
+                srcImg={BoloDeMorango}
                 alt={'Bolo de Morango'}
                 aos={'zoom-in'}
             />
