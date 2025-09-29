@@ -55,11 +55,27 @@
 
 /* Celulares pequenos */
 @media (max-width: 480px) {
-  .card-informacao1{
-    border-radius: 16px 16px 0 0px;
-  }
+    .container-cardInformacao {
+        overflow: hidden;
+    }
 
-  .card-informacao3{
-    border-radius: 0px 0px 16px 16px;
-  }
+    .cardInfo-titulo{
+        width: 250px;
+    }
+
+    .cardInfo-texto{
+       width: 250px;
+    }
+
+    .card-informacao1, .card-informacao2, .card-informacao3{
+        width: 350px;
+    }
+
+    .card-informacao1{
+        border-radius: 16px 16px 0 0px;
+    }
+
+    .card-informacao3{
+        border-radius: 0px 0px 16px 16px;
+    }
 }

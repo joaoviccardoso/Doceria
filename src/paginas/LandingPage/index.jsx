@@ -25,7 +25,6 @@ function LandingPage(){
     const [width, setWidth] = useState(0)
 
     useEffect(() => {
-        console.log(carrossel.current?.scrollWidth, carrossel.current?.offsetWidth)
         setWidth(carrossel.current?.scrollWidth - carrossel.current?.offsetWidth)
     },[])
 
@@ -34,7 +33,13 @@ function LandingPage(){
             duration: 1000,
             once: true,
         })
+
+        window.addEventListener("load", () => {
+            AOS.refresh()
+        })                    
     },[]);
+
+    
 
     return (
         <main>  

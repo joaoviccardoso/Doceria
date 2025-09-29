@@ -67,7 +67,7 @@
 /* Celulares pequenos */
 @media (max-width: 480px) {
     .container-produtoLanding{
-        max-width: 100%;
+        max-width: 350px;
         padding: .5rem;
     }
 
