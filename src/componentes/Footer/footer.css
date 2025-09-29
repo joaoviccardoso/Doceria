@@ -82,5 +82,7 @@ footer ul{
 
 /* Celulares pequenos */
 @media (max-width: 410px) {
-  
+    .footer h6, p, li{
+        font-size: var(--font-size-md);
+    }
 }

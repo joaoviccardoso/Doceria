@@ -100,3 +100,25 @@
         line-height: 1.2;
     }
 }
+
+/* Celulares mini */
+@media (max-width: 400px) {
+    .container-produtoLanding{
+        flex-direction: column;
+        height: 370px;
+        padding: .8rem;
+    }
+
+    .container-produtoLanding span{
+        font-size: var(--font-size-lg);
+        margin-top: .5rem;
+    }
+
+    .container-produtoLanding p{
+        margin: 0;
+    }
+
+    .img-produtoLanding{
+        margin-right: 0;
+    }
+}

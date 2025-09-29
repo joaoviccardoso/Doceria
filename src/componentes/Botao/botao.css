@@ -35,3 +35,13 @@
     border-radius: 12px;
     font-weight: 500;
 }
+
+@media (max-width: 400px) {
+    .btn-banner{
+        font-size: var(--font-size-xl);
+    }
+
+    .btn-fazerOrcamento{
+        padding: .8rem 3rem;
+    }
+}

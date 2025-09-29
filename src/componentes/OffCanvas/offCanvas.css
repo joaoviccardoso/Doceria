@@ -42,6 +42,10 @@
 
 /* Celulares pequenos */
 @media (max-width: 480px) {
+    #offcanvasRight{
+        width: 75%;
+    }
+
     .container-linkCadastro{
         display: none;
     }

@@ -101,3 +101,19 @@
     opacity: 75%;
   }
 }
+
+/* Celulares grandes */
+@media (max-width: 400px) {
+  .banner-containerIntroducao h1{
+    font-size: var(--font-size-3xl);
+  }
+
+  .banner-containerIntroducao p{
+    font-size: var(--font-size-lg);
+  }
+
+  .container-img{
+    top: 120px; 
+    left: 0; 
+  }
+}

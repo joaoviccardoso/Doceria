@@ -59,3 +59,10 @@
         left: -80px;
     }
 }
+
+/* Celulares mini */
+@media (max-width: 400px) {
+    .faixa-titulo h3{
+       font-size: var(--font-size-lg); 
+    }  
+}

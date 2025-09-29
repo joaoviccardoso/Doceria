@@ -86,7 +86,7 @@
     .container-formulario{
         text-align: center;
         padding: .8rem;
-        gap: .4rem;
+        gap: .8rem;
         width: 100%;
     }
 
@@ -94,7 +94,22 @@
         margin-left: 2rem;
     }
 
+    .input-formulario{
+        width: 100%;
+    }
+
     .container-img-contato, .backgroundMorango3{
         display: none;
+    }
+}
+
+/* Celulares mini */
+@media (max-width: 400px) {
+    .container-formulario label, .titulo-entreContata ,.botao-submit{
+        margin-left: 0;
+    }
+
+    .input-formulario{
+        width: 100%;
     }
 }

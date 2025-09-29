@@ -110,7 +110,7 @@
 
 .inner{
   display: flex;
-  gap: 6rem;
+  gap: 5rem;
 }
 
 .carrossel{
@@ -164,5 +164,36 @@
 
   .backgroundMorango2{
     left: -80px;
+  }
+}
+
+/* Celulares mini */
+@media (max-width: 400px) {
+  .banner-fazerOrcamento {
+    padding: 2rem;
+  }
+
+  .banner-fazerOrcamento h4{
+    font-size: var(--font-size-2xl);
+  }
+
+  .banner-fazerOrcamento p{
+    font-size: var(--font-size-md);
+  }
+
+  .banner-fazerOrcamento::before {
+    height: 35%;
+  }
+
+  .inner{
+    gap: 3.5rem;
+  }
+
+  .container-registro h3{
+    font-size: var(--font-size-2xl);
+  }
+
+  .container-registro p{
+    font-size: var(--font-size-md);
   }
 }
