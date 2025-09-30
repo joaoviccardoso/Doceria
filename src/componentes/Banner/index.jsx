@@ -1,7 +1,7 @@
 import Botao from '../Botao'
 import './banner.css'
 
-function Banner({titulo,texto ,srcImg, alt, aos}){
+function Banner({titulo,texto ,srcImg, alt, aos, className}){
     return (
         <section className='banner-header'>
             <div className='banner-containerIntroducao'>
@@ -29,6 +29,7 @@ function Banner({titulo,texto ,srcImg, alt, aos}){
             <div className='container-img'>
                 <div data-aos={aos} className='fundo-img'>
                     <img 
+                        className={className}
                         src={srcImg} 
                         alt={alt}
                     />

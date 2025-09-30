@@ -1,0 +1,9 @@
+.fundo-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgCardapio{
+    margin-bottom:  12rem;
+}
