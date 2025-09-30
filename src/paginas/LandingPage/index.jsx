@@ -49,6 +49,7 @@ function LandingPage(){
                 srcImg={BoloDeMorango}
                 alt={'Bolo de Morango'}
                 aos={'zoom-in'}
+                className={'imgLandingPage'}
             />
             
             <section className='container-informacao'>

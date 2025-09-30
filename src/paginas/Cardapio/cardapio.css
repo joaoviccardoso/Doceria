@@ -7,3 +7,16 @@
 .imgCardapio{
     margin-bottom:  12rem;
 }
+
+.sidebar ul {
+    padding-left: 15rem;
+}
+
+.sidebar a{
+    color: var(--letra-escura);
+}
+
+.sidebar hr{
+    border: 1px solid #000;
+    width: 300px;
+}
