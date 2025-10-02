@@ -2,7 +2,7 @@ import './cardapio.css'
 import mocaBanner from '../../assets/MocaFazendoUmBolo.png'
 import Banner from '../../componentes/Banner'
 import Faixa from '../../componentes/Faixa'
-
+import Card from '../../componentes/Card'
 
 function Cardapio(){
     return (
@@ -15,11 +15,12 @@ function Cardapio(){
                 aos={'zoom-in'}
                 className={'imgCardapio'}
             />
-
+            
             <section>
                 <Faixa
                     texto={'Vem entender por que nossos doces'}
                     texto2={'conquistam corações'}
+                    
                 />
                 <aside className="sidebar">
                     <nav>
@@ -41,7 +42,7 @@ function Cardapio(){
                 </aside>
 
                 <section className='containerCardapio'>
-
+                   <Card/>
                 </section>
             </section>
         </main>
