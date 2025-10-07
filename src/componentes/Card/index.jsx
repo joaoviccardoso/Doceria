@@ -1,8 +1,9 @@
+import Botao from '../Botao';
 import './card.css'
 import { useEffect, useState } from 'react'
 
 function Card(){
-     const [produtos, setProduto] = useState([]);
+    const [produtos, setProduto] = useState([]);
 
     useEffect(() => {
         const fetchProdutos = async () => {
@@ -27,16 +28,26 @@ function Card(){
     }, [produtos]);
 
    return (
-    <div>
+    <div className='container-card'>
         {produtos.map(produto => (
         <article className='card' key={produto.id}>
-            <img src={produto.image} alt={produto.type} />
+            <div className='container-card-img'>
+                <img src={produto.image} alt={produto.type} className='imgProduto'/>
+            </div>
             <h3>{produto.title}</h3>
-            <p>{produto.type}</p>
-            <p>{produto.description}</p>
-            <p>
-            {produto.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
-            </p>
+            <span><p className='tipo-doce'>{produto.type}</p></span>
+            <p className='descrição-doce'>{produto.description}</p>
+
+            <div className='container-valorEhBtn'>
+                <p className='ValorDoProduto'>
+                   {produto.price   ? produto.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) : 'Preço indisponível'}
+                </p>
+                <Botao
+                    text={'Adicionar'}
+                    className={"btn-adicionar"}
+                />
+            </div>
+            
         </article>
         ))}
     </div>

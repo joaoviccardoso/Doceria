@@ -22,27 +22,32 @@ function Cardapio(){
                     texto2={'conquistam corações'}
                     
                 />
-                <aside className="sidebar">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Bolo</a></li>
-                            <hr/>
-                            <li><a href="#">Bolo</a></li>
-                            <hr/>
-                            <li><a href="#">Bolo</a></li>
-                            <hr/>
-                             <li><a href="#">Bolo</a></li>
-                            <hr/>
-                            <li><a href="#">Bolo</a></li>
-                            <hr/>
-                            <li><a href="#">Bolo</a></li>
-                            <hr/>
-                        </ul>
-                    </nav>
-                </aside>
 
-                <section className='containerCardapio'>
-                   <Card/>
+                <section className='container-listaEhCard'>
+
+                    <aside className="sidebar">
+                            <ul className='ListaProdutos'>
+                                <li><a href="#">Bolo</a></li>
+                                <hr/>
+                                <li><a href="#">Bolo</a></li>
+                                <hr/>
+                                <li><a href="#">Bolo</a></li>
+                                <hr/>
+                                <li><a href="#">Bolo</a></li>
+                                <hr/>
+                                <li><a href="#">Bolo</a></li>
+                                <hr/>
+                                <li><a href="#">Bolo</a></li>
+                                <hr/>
+                            </ul>
+                    </aside>
+                    
+
+
+                    <div className='containerCardapio'>
+                    <Card/>
+                    </div>
+
                 </section>
             </section>
         </main>

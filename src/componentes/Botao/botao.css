@@ -18,7 +18,7 @@
     z-index: 1;
 }
 
-.verCardapio{
+.verCardapio, .btn-adicionar{
     background-color: var(--rosa-btn);
     font-size: var(--font-size-md);
     font-family: var(--font-secondary);
@@ -26,6 +26,12 @@
     border-radius: 16px;
     padding: .5rem 0;
     width: 150px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.verCardapio, .btn-adicionar:hover{
+    background-color: var(--rosa-btn-hover); 
+    transform: scale(1.03);
 }
 
 .botao-submit{

@@ -8,8 +8,15 @@
     margin-bottom:  12rem;
 }
 
-.sidebar ul {
-    padding-left: 15rem;
+.container-listaEhCard{
+    margin: 0rem 15rem;
+}
+
+.sidebar{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    width: 30%;
 }
 
 .sidebar a{
@@ -19,6 +26,14 @@
 .sidebar hr{
     border: 1px solid #000;
     width: 300px;
+}
+
+.ListaProdutos{
+    padding: 0;
+}
+
+.containerCardapio{
+    width: 100%;
 }
 
 .card{

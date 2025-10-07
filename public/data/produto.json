@@ -1,98 +1,98 @@
 [
-  {
+ {
     "id": 1,
-    "image": "https://via.placeholder.com/400x300?text=Bolo+Chocolate",
-    "title": "Bolo de Chocolate Belga",
-    "type": "bolo",
-    "description": "Bolo úmido de chocolate belga com ganache de chocolate e raspas por cima.",
-    "price": 85.50
+    "image": "./src/assets/boloDeLimao.png",
+    "title": "Bolo de Limão",
+    "type": "Bolo",
+    "description": "Bolo de chocolate com recheio trufado e cobertura cremosa de ganache.",
+    "price": 82.90
   },
   {
     "id": 2,
-    "image": "https://via.placeholder.com/400x300?text=Torta+Limao",
-    "title": "Torta de Limão Merengue",
-    "type": "torta",
-    "description": "Base crocante, recheio cremoso de limão siciliano e merengue dourado.",
-    "price": 72.00
-  },
-  {
-    "id": 3,
-    "image": "https://via.placeholder.com/400x300?text=Cupcake+Baunilha",
-    "title": "Cupcake de Baunilha com Buttercream",
-    "type": "cupcake",
-    "description": "Massa macia de baunilha com cobertura de buttercream suíço.",
-    "price": 8.50
-  },
-  {
-    "id": 4,
-    "image": "https://via.placeholder.com/400x300?text=Cookie+CHC",
-    "title": "Cookie de Chocolate com Nozes",
-    "type": "cookie",
-    "description": "Cookie crocante nas bordas e macio no centro, pedaços generosos de chocolate e nozes.",
-    "price": 6.00
-  },
-  {
-    "id": 5,
-    "image": "https://via.placeholder.com/400x300?text=Brigadeiro+Gourmet",
-    "title": "Brigadeiro Gourmet (unitário)",
-    "type": "brigadeiro",
-    "description": "Brigadeiro cremoso com chocolate belga e confeitos diferenciados.",
-    "price": 4.50
-  },
-  {
-    "id": 6,
-    "image": "https://via.placeholder.com/400x300?text=Bolo+Red+Velvet",
-    "title": "Bolo Red Velvet",
-    "type": "bolo",
-    "description": "Clássico red velvet com recheio e cobertura de cream cheese.",
-    "price": 95.00
-  },
-  {
-    "id": 7,
-    "image": "https://via.placeholder.com/400x300?text=Torta+Maça",
-    "title": "Torta de Maçã com Canela",
-    "type": "torta",
-    "description": "Torta caseira com maçãs caramelizadas, toque de canela e crosta amanteigada.",
-    "price": 65.00
-  },
-  {
-    "id": 8,
-    "image": "https://via.placeholder.com/400x300?text=Pao+de+Mel",
-    "title": "Pão de Mel Recheado",
-    "type": "pao de mel",
-    "description": "Pão de mel macio recheado com doce de leite e coberto por chocolate ao leite.",
-    "price": 7.50
-  },
-  {
-    "id": 9,
-    "image": "https://via.placeholder.com/400x300?text=Cheesecake",
-    "title": "Cheesecake de Frutas Vermelhas",
-    "type": "torta",
-    "description": "Cheesecake cremoso com calda de frutas vermelhas por cima e base crocante.",
+    "image": "./src/assets/BoloDeMorango.png",
+    "title": "Bolo de Morango com Chantilly",
+    "type": "Bolo",
+    "description": "Massa branca leve, recheio de morangos frescos e cobertura de chantilly.",
     "price": 78.00
   },
   {
+    "id": 3,
+    "image": "./src/assets/BolodeChocolatecomCoco.png",
+    "title": "Bolo Prestígio",
+    "type": "Bolo",
+    "description": "Combinação irresistível de chocolate e coco, com cobertura cremosa.",
+    "price": 84.50
+  },
+  {
+    "id": 4,
+    "image": "./src/assets/BolodeLeiteNinhocomNutella.png",
+    "title": "Bolo de Leite Ninho com Nutella",
+    "type": "Bolo",
+    "description": "Camadas de massa branca, recheadas com creme de leite ninho e Nutella.",
+    "price": 96.00
+  },
+  {
+    "id": 5,
+    "image": "./src/assets/BoloDeRedVelvet.png",
+    "title": "Bolo Red Velvet",
+    "type": "Bolo",
+    "description": "Clássico bolo americano de massa aveludada vermelha e recheio de cream cheese.",
+    "price": 88.00
+  },
+  {
+    "id": 6,
+    "image": "",
+    "title": "Bolo de Abacaxi com Coco",
+    "type": "Bolo",
+    "description": "Massa leve com recheio de abacaxi em calda e creme de coco.",
+    "price": 79.90
+  },
+  {
+    "id": 7,
+    "image": "",
+    "title": "Bolo de Doce de Leite com Nozes",
+    "type": "Bolo",
+    "description": "Bolo amanteigado com recheio de doce de leite e pedacinhos de nozes.",
+    "price": 85.00
+  },
+  {
+    "id": 8,
+    "image": "",
+    "title": "Bolo de Laranja com Calda",
+    "type": "Bolo",
+    "description": "Massa leve e aromática com suco natural de laranja e calda cítrica.",
+    "price": 65.00
+  },
+  {
+    "id": 9,
+    "image": "",
+    "title": "Bolo de Amendoim",
+    "type": "Bolo",
+    "description": "Bolo caseiro com sabor intenso de amendoim e cobertura de creme crocante.",
+    "price": 68.50
+  },
+  {
     "id": 10,
-    "image": "https://via.placeholder.com/400x300?text=Cupcake+Red+Velvet",
-    "title": "Mini Red Velvet Cupcake",
-    "type": "cupcake",
-    "description": "Mini bolo red velvet com cobertura de cream cheese — ideal para festas.",
-    "price": 9.00
+    "image": "",
+    "title": "Bolo de Maracujá com Chocolate Branco",
+    "type": "Bolo",
+    "description": "Camadas de massa branca com creme de maracujá e ganache de chocolate branco.",
+    "price": 92.00
   },
   {
     "id": 11,
-    "image": "https://via.placeholder.com/400x300?text=Cookie+Aveia",
-    "title": "Cookie de Aveia e Mel",
-    "type": "cookie",
-    "description": "Cookie rústico de aveia, mel e pedaços de fruta seca.",
-    "price": 5.50
+    "image": "",
+    "title": "Bolo de Cenoura com Chocolate",
+    "type": "Bolo",
+    "description": "Tradicional bolo de cenoura com cobertura generosa de chocolate.",
+    "price": 60.00
   },
   {
     "id": 12,
-    "image": "https://via.placeholder.com/400x300?text=Brigadeiro+Beijinho",
-    "title": "Brigadeiro Beijinho (unitário)",
-    "type": "brigadeiro",
-    "description": "Brigadeiro de coco com acabamento de coco ralado.",
-    "price": 4.00
+    "image": "",
+    "title": "Bolo Brigadeiro",
+    "type": "Bolo",
+    "description": "Camadas de bolo de chocolate com recheio cremoso e cobertura de brigadeiro.",
+    "price": 89.00
   }
 ]
