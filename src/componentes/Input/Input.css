@@ -15,3 +15,23 @@
     outline: none;
     border: solid 2px var(--rosa-btn)
 }
+
+.input-login{
+    border: solid 2px var(--roxo-card);
+    height: 65px;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 16px;
+    box-shadow: var(--box-light);
+    transition: 
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
+}
+
+.input-login:focus{
+    outline: none;
+    border-color: var(--roxo-banner);
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.3); /* brilho roxo suave */
+    transform: scale(1.03);
+}

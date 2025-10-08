@@ -1,0 +1,59 @@
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 600px;
+    border: solid #fff 2px;
+    background-color: var(--letra-clara);
+    border-radius: 42px;
+    box-shadow: var(--box-cards);
+}
+
+.login-form p{
+    font-family: var(--font-secondary);
+    color: var(--letra-escura);
+    font-size: var(--font-size-lg);
+    font-weight: 400;
+}
+
+.login-form h1{
+    font-family: var(--font-secondary);
+    color: var(--letra-escura);
+    margin: 0;
+}
+
+.login-form label{
+    align-self: flex-start;
+    font-family: var(--font-secondary);
+    color: var(--letra-escura);
+    font-size: var(--font-size-xl);
+    margin-top: 1.8rem;
+    margin-left: 1rem;
+}
+
+.container-inputRadio label{
+    margin: 0
+}
+
+.login-form a{
+    font-family: var(--font-secondary);
+    color: var(--letra-escura);
+    font-size: var(--font-size-xl);
+    margin: 0;
+}
+
+.container-inputRadio{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+}

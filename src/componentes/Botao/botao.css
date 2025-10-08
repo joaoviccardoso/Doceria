@@ -42,6 +42,15 @@
     font-weight: 500;
 }
 
+.btnSubmit-entrar{
+    background-color: var(--roxo-banner);
+    font-size: var(--font-size-3xl);
+    font-family: var(--font-secondary);
+    border-radius: 64px;
+    padding: .5rem 3rem;
+    font-weight: 500;
+}
+
 @media (max-width: 400px) {
     .btn-banner{
         font-size: var(--font-size-xl);

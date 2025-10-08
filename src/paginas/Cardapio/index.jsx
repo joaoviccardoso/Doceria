@@ -1,10 +1,24 @@
 import './cardapio.css'
+import { useEffect } from 'react';
+import AOS from 'aos';
 import mocaBanner from '../../assets/MocaFazendoUmBolo.png'
 import Banner from '../../componentes/Banner'
 import Faixa from '../../componentes/Faixa'
 import Card from '../../componentes/Card'
 
 function Cardapio(){
+    
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        })
+
+        window.addEventListener("load", () => {
+            AOS.refresh()
+        })                    
+    },[]);
+
     return (
         <main>
             <Banner
