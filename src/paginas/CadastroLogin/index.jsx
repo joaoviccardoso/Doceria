@@ -44,6 +44,8 @@ function CadastroLogin(){
                         className={'btnSubmit-entrar'}
                     />
 
+                    <Link to={'/criarconta'}>Criar uma Conta.</Link>
+
                 </form>
             </div>
         </div>

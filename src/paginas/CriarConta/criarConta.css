@@ -1,0 +1,66 @@
+.main-criarConta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rosa-backGround);
+}
+
+.container-criarConta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: var(--box-cards);
+    width: 100%;
+    max-width: 40%;
+    padding: 3rem;
+    margin-top: 5rem;
+}
+
+.container-informacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+}
+
+.container-informacao h2{
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-2xl);
+    font-weight: 500;
+    color: var(--letra-escura);
+}
+
+.container-informacao p{
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-lg);
+    font-weight: 400;
+    color: var(--letra-escura);
+}
+
+.container-informacoesPessoal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container-informacoesConta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.containerSenha{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

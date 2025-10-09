@@ -6,6 +6,7 @@ import Cabecalho from './componentes/Nav'
 import Footer from './componentes/Footer'
 import PaginaNaoEncontrada from './paginas/paginaNaoEncontrada'
 import CadastroLogin from './paginas/CadastroLogin'
+import CriarConta from './paginas/CriarConta'
 
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
         <Cabecalho/>
       </header>
       
-
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/cardapio' element={<Cardapio/>}/>
           <Route path='/cadastro' element={<CadastroLogin/>}/>
+          <Route path='/criarconta' element={<CriarConta/>}/>
           <Route path='*' element={<PaginaNaoEncontrada/>}/>
         </Routes>
 

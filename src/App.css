@@ -2,3 +2,7 @@
 html {
   color-scheme: light;
 }
+
+body{
+  background-color: var(--rosa-backGround);
+}
