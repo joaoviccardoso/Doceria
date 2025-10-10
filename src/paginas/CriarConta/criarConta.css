@@ -19,7 +19,7 @@
     margin-top: 5rem;
 }
 
-.container-informacao{
+.container-informacaoCriarConta{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,14 +27,14 @@
     margin: 2rem 1rem;
 }
 
-.container-informacao h2{
+.container-informacaoCriarConta h2{
     font-family: var(--font-secondary);
     font-size: var(--font-size-2xl);
     font-weight: 500;
     color: var(--letra-escura);
 }
 
-.container-informacao p{
+.container-informacaoCriarConta p{
     font-family: var(--font-secondary);
     font-size: var(--font-size-lg);
     font-weight: 400;

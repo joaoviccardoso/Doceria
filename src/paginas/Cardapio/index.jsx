@@ -59,7 +59,7 @@ function Cardapio(){
 
 
                     <div className='containerCardapio'>
-                    <Card/>
+                        <Card/>
                     </div>
 
                 </section>

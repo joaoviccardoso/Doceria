@@ -6,7 +6,7 @@ function CriarConta(){
     return(
         <main className='main-criarConta'>
             <form className='container-criarConta'>
-                <div className='container-informacao'>
+                <div className='container-informacaoCriarConta'>
                     <h2>Crie sua conta pessoal</h2>
                     <p>Será enviado (solicitado) uma confirmação do cadastro por e-mail.</p>
                 </div>

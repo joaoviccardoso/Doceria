@@ -1,13 +1,24 @@
-.btn-banner{
-    background-color: var(--rosa-cards);
-    font-size: var(--font-size-2xl);
-    font-family: var(--font-secondary);
-    padding: 1rem 3rem;
+.verCardapio, .btn-banner{
+    width: 100%;
     border-radius: 16px;
+    box-shadow: var(--box-light);
+    transition: background-color 0.3s ease, 
+                transform 0.2s ease;
 }
 
-.btn-banner:hover{
+.verCardapio{
     background-color: var(--rosa-btn);
+    max-width: 65%;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-secondary);
+    height: 50px;
+}
+
+.btn-banner{
+    background-color: var(--rosa-cards);
+    height: 65px;
+    font-size: var(--font-size-2xl);
+    font-family: var(--font-secondary);
 }
 
 .btn-fazerOrcamento{
@@ -16,20 +27,12 @@
     border-radius: 8px;
     padding: .8rem 5rem;
     z-index: 1;
+    box-shadow: var(--box-light);
+    transition: background-color 0.3s ease, 
+                transform 0.2s ease;
 }
 
-.verCardapio, .btn-adicionar{
-    background-color: var(--rosa-btn);
-    font-size: var(--font-size-md);
-    font-family: var(--font-secondary);
-    font-weight: 500;
-    border-radius: 16px;
-    padding: .5rem 0;
-    width: 150px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.verCardapio, .btn-adicionar:hover{
+.verCardapio:hover, .btn-adicionar:hover, .btn-banner:hover {
     background-color: var(--rosa-btn-hover); 
     transform: scale(1.03);
 }
@@ -40,6 +43,14 @@
     padding: .5rem 2rem;
     border-radius: 12px;
     font-weight: 500;
+    box-shadow: var(--box-light);
+    transition: background-color 0.3s ease, 
+                transform 0.2s ease;
+}
+
+.btn-fazerOrcamento:hover, .botao-submit:hover{
+    background-color: var(--roxo-hover); 
+    transform: scale(1.03);
 }
 
 .btnSubmit-entrar{
