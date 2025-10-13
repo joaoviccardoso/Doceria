@@ -7,6 +7,7 @@ import Footer from './componentes/Footer'
 import PaginaNaoEncontrada from './paginas/paginaNaoEncontrada'
 import CadastroLogin from './paginas/CadastroLogin'
 import CriarConta from './paginas/CriarConta'
+import MeuCarrinho from './paginas/MeuCarrinho'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/cardapio' element={<Cardapio/>}/>
           <Route path='/cadastro' element={<CadastroLogin/>}/>
           <Route path='/criarconta' element={<CriarConta/>}/>
+          <Route path='/meuCarrinho' element={<MeuCarrinho/>}/>
           <Route path='*' element={<PaginaNaoEncontrada/>}/>
         </Routes>
 

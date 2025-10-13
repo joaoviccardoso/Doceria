@@ -1,0 +1,72 @@
+.main-carrinho{
+    display: flex;
+}
+
+.container-meusPedidos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 65%;
+}
+
+.container-valorTotal{
+    width: 35%;
+}
+
+.container-cardsMeusPedidos{
+    width: 100%;
+    max-width: 80%;
+    background-color: var(--letra-clara);
+    border-radius: 16px;
+    box-shadow: var(--box-cards);
+}
+
+.container-cardsMeusPedidos h2{
+    margin: 1.5rem;
+    color: var(--letra-escura);
+    font-weight: 400;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-2xl);
+}
+
+.card-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: .8rem 1rem;
+    color: var(--letra-escura);
+    border-top: solid 2px rgba(0, 0, 0, .5);
+}
+
+.card-item img{
+    border-radius: 50%;
+    border: 6px solid #fff;
+    width: 225px;
+    height: 225px;
+    margin: 1rem;
+    box-shadow: var(--box-cards);
+}
+
+.card-item h3{
+    max-width: 180px;
+    color: var(--letra-escura);
+    font-weight: 400;
+    font-family: var(--font-primary);
+    font-size: var(--font-size-xl);
+}
+
+.card-item p{
+    color: var(--letra-escura);
+    font-weight: 400;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-xl);
+}
+
+.card-item button{
+    color: var(--letra-escura);
+    font-weight: 400;
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-xl);
+}
