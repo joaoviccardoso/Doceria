@@ -1,3 +1,4 @@
+import Botao from '../../componentes/Botao';
 import './meuCarrinho.css'
 import { useState } from 'react'
 const CART_KEY = 'doceria_cart';
@@ -67,7 +68,34 @@ function MeuCarrinho(){
             </section>
 
             <section className='container-valorTotal'>
-                <button onClick={saveSampleCart}>Salvar exemplo no carrinho</button>
+                <ul className='lista-valorCarrinho'>
+                    <li><h3>Resumo do Pedido</h3></li>
+                    <li>
+                        <p>Subtotal</p>
+                        <p>R$220,00</p>
+                    </li>
+                    <hr/>
+                    <li>
+                        <p>Frete</p>
+                        <p>R$0,00</p>
+                    </li>
+                    <hr/>
+                    <li>
+                        <p>Descontos</p>
+                        <p>R$0,00</p>
+                    </li>
+                    <hr/>
+                    <li>
+                        <p>Total</p>
+                        <p>R$220,00</p>
+                    </li>
+                    <li>
+                        <Botao
+                            className={'botao-finalizarPedido'}
+                            text={'Finalizar Pedido'}
+                        />
+                    </li>
+                </ul>
             </section>
         </main>
     )

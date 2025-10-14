@@ -70,3 +70,38 @@
     font-family: var(--font-secondary);
     font-size: var(--font-size-xl);
 }
+
+.lista-valorCarrinho{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--letra-clara);
+    width: 100%;
+    height: 100%;
+    max-height: 80%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 0 0 16px 16px;
+    box-shadow: var(--box-cards);
+}
+
+.lista-valorCarrinho h3, p{
+    color: var(--letra-escura);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    margin: 0;
+}
+
+.lista-valorCarrinho h3{
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.lista-valorCarrinho hr{
+    margin: 0 0 2rem 0;
+}
+
+.lista-valorCarrinho li{
+    display: flex;
+    justify-content: space-between;
+}
+

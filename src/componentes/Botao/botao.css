@@ -1,4 +1,4 @@
-.verCardapio, .btn-banner{
+.verCardapio, .btn-banner, .botao-finalizarPedido{
     width: 100%;
     border-radius: 16px;
     box-shadow: var(--box-light);
@@ -6,7 +6,11 @@
                 transform 0.2s ease;
 }
 
-.verCardapio{
+.botao-finalizarPedido{
+    margin-top: 10rem;
+}
+
+.verCardapio, .botao-finalizarPedido{
     background-color: var(--rosa-btn);
     max-width: 65%;
     font-size: var(--font-size-xl);
@@ -32,7 +36,7 @@
                 transform 0.2s ease;
 }
 
-.verCardapio:hover, .btn-adicionar:hover, .btn-banner:hover {
+.verCardapio:hover, .btn-adicionar:hover, .btn-banner:hover, .botao-finalizarPedido:hover {
     background-color: var(--rosa-btn-hover); 
     transform: scale(1.03);
 }
