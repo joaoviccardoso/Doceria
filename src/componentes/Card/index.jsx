@@ -1,6 +1,7 @@
 import Botao from '../Botao';
 import './card.css'
 import { useEffect, useState } from 'react'
+import { addToCarrinho } from "../../servicos/CarrinhoLocalStorage";
 
 function Card(){
     const [produtos, setProduto] = useState([]);
@@ -45,6 +46,7 @@ function Card(){
                 <Botao
                     text={'Adicionar'}
                     className={"btn-adicionar"}
+                    onClick={() => addToCarrinho(produto)}
                 />
             </div>
             
