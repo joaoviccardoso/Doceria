@@ -1,0 +1,49 @@
+.main-checkout{
+    display: flex;
+}
+
+.container-checkout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 65%;
+}
+
+.form-checkout{
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: var(--box-cards);
+    padding: 2.5rem;
+    background-color: var(--letra-clara);
+    width: 100%;
+    max-width: 70%;
+}
+
+.informacao-pagamento{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.informacao-entrega, .informacao-pagamentoCard{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.container-formaDePagamento{
+    border: solid 2px var(--roxo-card);
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: var(--box-cards);
+    padding: 1rem;
+}
+
+.container-formaDePagamento span{
+    display: flex;
+    gap: 1rem;
+}

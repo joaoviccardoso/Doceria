@@ -2,6 +2,7 @@ import Botao from '../../componentes/Botao';
 import { useState, useEffect } from 'react';
 import './meuCarrinho.css'
 import { getCarrinho, removeFromCarrinho } from "../../servicos/CarrinhoLocalStorage";
+import { Link } from 'react-router-dom';
 
 function MeuCarrinho(){
     const [carrinho, setCarrinho] = useState({ items: [] })
@@ -59,10 +60,13 @@ function MeuCarrinho(){
                         <p>R$220,00</p>
                     </li>
                     <li>
-                        <Botao
-                            className={'botao-finalizarPedido'}
-                            text={'Finalizar Pedido'}
-                        />
+                        <Link to={'/checkout'}>
+                            <Botao
+                                className={'botao-finalizarPedido'}
+                                text={'Finalizar Pedido'}
+                            />
+                        </Link>
+                        
                     </li>
                 </ul>
             </section>

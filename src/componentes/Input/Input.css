@@ -1,4 +1,4 @@
-.input-formulario, .input-login, .input-informacaoPequeno, .input-informacaoGrande{
+.input-formulario, .input-login, .input-informacaoPequeno, .input-informacaoGrande, .input-checkout{
     border: solid 2px var(--roxo-card);
     width: 100%;
     border-radius: 16px;
@@ -9,12 +9,32 @@
         transform 0.2s ease;
 }
 
+.input-large{
+    max-width: 100%;
+}
+
+.input-mediun{
+    max-width: 65%;
+}
+
+.input-metade{
+    max-width: 48%;
+}
+
+.input-mini{
+    max-width: 30%;
+}
+
 .input-formulario{
     height: 50px;
 }
 
 .inputMensagem{
     height: 150px;
+}
+
+.input-checkout{
+    height: 50px;
 }
 
 .input-formulario:focus{
@@ -33,7 +53,7 @@
     max-width: 45%;
 }
 
-.input-informacaoPequeno:focus, .input-informacaoGrande:focus, .input-login:focus, .input-formulario:focus{
+.input-informacaoPequeno:focus, .input-informacaoGrande:focus, .input-login:focus, .input-formulario:focus, .input-checkout:focus{
     outline: none;
     border-color: var(--roxo-banner);
     box-shadow: 0 0 10px rgba(138, 43, 226, 0.3); /* brilho roxo suave */
