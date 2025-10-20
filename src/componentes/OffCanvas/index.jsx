@@ -15,6 +15,7 @@ function OffCanvas(){
                 </div>    
                 <Link className="offCanvas-link" to={'/'}>Inicio</Link>
                 <Link className="offCanvas-link" to={'/cardapio'}>Cardapio</Link>
+                <Link className="offCanvas-link" to={'/minhaConta'}>Minha Conta</Link>
                 <Link className="offCanvas-link" to={'/meuCarrinho'}>Meu Carrinho</Link>
             </div>
         </div>

@@ -9,6 +9,7 @@ import CadastroLogin from './paginas/CadastroLogin'
 import CriarConta from './paginas/CriarConta'
 import MeuCarrinho from './paginas/MeuCarrinho'
 import CheckOut from './paginas/CheckOut'
+import MinhaConta from './paginas/MinhaConta'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/cadastro' element={<CadastroLogin/>}/>
           <Route path='/criarconta' element={<CriarConta/>}/>
           <Route path='/meuCarrinho' element={<MeuCarrinho/>}/>
+          <Route path='/minhaConta' element={<MinhaConta/>}/>
           <Route path='/checkout' element={<CheckOut/>}/>
           <Route path='*' element={<PaginaNaoEncontrada/>}/>
         </Routes>

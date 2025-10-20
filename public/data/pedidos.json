@@ -1,0 +1,24 @@
+[
+  {
+    "orderId": "PED12345",
+    "customerId": 1,
+    "date": "2025-01-22T10:30:00",
+    "items": [
+      { "productTitle": "Bolo de Limão", "quantity": 1, "price": 82.9 },
+      { "productTitle": "Bolo Brigadeiro", "quantity": 1, "price": 89.0 }
+    ],
+    "total": 171.9,
+    "status": "Entregue"
+  },
+  
+  {
+    "orderId": "PED12346",
+    "customerId": 1,
+    "date": "2025-01-23T15:15:00",
+    "items": [
+      { "productTitle": "Bolo Red Velvet", "quantity": 1, "price": 88.0 }
+    ],
+    "total": 88.0,
+    "status": "Em preparo"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "customerId": 1,
+    "items": [
+      { "productId": 11, "title": "Bolo de Cenoura com Chocolate", "quantity": 1, "price": 60 }
+    ],
+    "total": 60
+  }
+]

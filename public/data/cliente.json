@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "João Silva",
+    "email": "joao.silva@email.com",
+    "password": "123456",
+    "phone": "11999999999",
+    "status": "ativo",
+    "address": {
+      "street": "Rua das Flores",
+      "number": 120,
+      "neighborhood": "Jardim Primavera",
+      "city": "São Paulo",
+      "state": "SP",
+      "cep": "01234-567"
+    }
+  }
+]
