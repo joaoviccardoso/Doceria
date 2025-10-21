@@ -39,7 +39,82 @@
 }
 
 .container-infomacaoCliente{
-    border: solid red 1px;
     width: 100%;
     max-width: 80%;
+}
+
+.container-infomacaoCliente{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 12rem;
+}
+
+.container-tituloInformacaoCliente{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.ul-infomacaoCliente{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.ul-infomacaoCliente li{
+    font-size: var(--font-size-2xl);
+    width: 100%;
+    max-width: 80%;
+}
+
+.link-infomacaoCliente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 30%;
+    padding: 2rem 0;
+    background-color: var(--rosa-cards);
+    border-radius: 16px;
+    box-shadow: var(--box-cards);
+    transition: transform .3s ease;
+}
+
+.link-meusDados{
+    max-width: 65%;
+}
+
+.link-endereco{
+    max-width: 100%;
+}
+
+.link-infomacaoCliente:hover{
+    transform: scale(1.03);
+}
+
+.container-nomeUsuario, .container-emailUsuario{
+    display: flex;
+    gap: 1rem;
+}
+
+.container-adicionarEndereco{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-informacaoDeAcesso, .container-informacaoDePedido, .container-informacaoDeEndereco{
+    background-color: var(--rosa-muitoclaro);
+}
+
+.titulo-informacoes{
+    width: 100%;
+    background: var(--rosa-btn);
+}
+
+.h4-titulosMinhaConta{
+    font-size: var(--font-size-lg);
+    color: var(--letra-clara);
 }
