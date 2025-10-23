@@ -64,18 +64,17 @@
     gap: 1.5rem;
 }
 
-.ul-infomacaoCliente li{
+.li-informaCliente, .link-meusDados, .link-meusPedidos, .link-endereco{
     font-size: var(--font-size-2xl);
     width: 100%;
-    max-width: 80%;
+    max-width: 30%;
 }
 
 .link-infomacaoCliente{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 30%;
     padding: 2rem 0;
     background-color: var(--rosa-cards);
     border-radius: 16px;
