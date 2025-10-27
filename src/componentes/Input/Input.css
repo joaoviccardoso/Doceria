@@ -1,4 +1,4 @@
-.input-formulario, .input-login, .input-informacaoPequeno, .input-informacaoGrande, .input-checkout{
+.input-formulario, .input-login, .input-informacaoPequeno, .input-informacaoGrande, .input-checkout, .input-minhaConta{
     border: solid 2px var(--roxo-card);
     width: 100%;
     border-radius: 16px;
@@ -7,6 +7,18 @@
         border-color 0.3s ease,
         box-shadow 0.3s ease,
         transform 0.2s ease;
+}
+
+.input-minhaConta{
+    height: 50px;
+}
+
+#inputCpf-meusDados, #inputDate-meusDados{
+    max-width: 45%;
+}
+
+#inputPhone-meusDados{
+    max-width: 30%;
 }
 
 .input-large{

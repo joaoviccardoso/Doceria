@@ -6,6 +6,8 @@
     "password": "123456",
     "phone": "11999999999",
     "status": "ativo",
+    "date": "19/10/25",
+    "cpf": "472987111-32",
     "address": {
       "street": "Rua das Flores",
       "number": 120,

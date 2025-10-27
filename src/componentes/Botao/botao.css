@@ -1,9 +1,14 @@
-.verCardapio, .btn-banner, .botao-finalizarPedido{
+.verCardapio, .btn-banner, .botao-finalizarPedido, .btnExcluirEhEditarConta{
     width: 100%;
     border-radius: 16px;
     box-shadow: var(--box-light);
     transition: background-color 0.3s ease, 
                 transform 0.2s ease;
+}
+
+#botaoExcluirConta, #botaoAtualizarConta{
+    max-width: 30%;
+    height: 50px;
 }
 
 .botao-finalizarPedido{
@@ -34,6 +39,11 @@
     box-shadow: var(--box-light);
     transition: background-color 0.3s ease, 
                 transform 0.2s ease;
+}
+
+.btnExcluirEhEditarConta{
+    max-width: 65%;
+    background-color: var(--rosa-btn);
 }
 
 .verCardapio:hover, .btn-adicionar:hover, .btn-banner:hover, .botao-finalizarPedido:hover {

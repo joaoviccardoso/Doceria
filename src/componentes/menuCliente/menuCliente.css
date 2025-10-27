@@ -1,0 +1,36 @@
+/**/
+.container-navegacaoCliente{
+    width: 100%;
+    max-width: 20%;
+}
+/**/
+.ul-navegacaoCliente{
+    padding: 0;
+    border-radius: 0 0 16px 0;
+    background-color: var(--roxo-card);
+    box-shadow: var(--box-cards);
+}
+/**/
+.ul-navegacaoCliente svg{
+    margin-right: .8rem;
+}
+/**/
+.ul-navegacaoCliente li {
+    transition: background .3s, border-radius .3s;
+}
+/**/
+.link-navegacaoCliente{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+/**/
+.ul-navegacaoCliente li:last-child:hover{
+    border-radius: 0 0 16px 0;
+    background-color: var(--roxo-hover); 
+}
+/**/
+.link-navegacaoCliente:hover{
+    background-color: var(--roxo-hover); 
+}

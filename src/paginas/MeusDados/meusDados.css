@@ -1,0 +1,33 @@
+.main-meusDados{
+    display: flex;
+}
+
+.container-meusDados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    max-width: 80%;
+    margin:0 8rem;
+}
+
+.form-meusDados{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 72%;
+    margin: .5rem 0;
+}
+
+.containerForm-dataEhCpf{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerForm-telefoneEhBotoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
