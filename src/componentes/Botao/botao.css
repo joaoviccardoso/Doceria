@@ -1,9 +1,16 @@
-.verCardapio, .btn-banner, .botao-finalizarPedido, .btnExcluirEhEditarConta{
+.verCardapio, .btn-banner, .botao-finalizarPedido, .btnExcluirEhEditarConta, .btnAdicionarEndereco{
     width: 100%;
     border-radius: 16px;
     box-shadow: var(--box-light);
     transition: background-color 0.3s ease, 
                 transform 0.2s ease;
+}
+
+.btnAdicionarEndereco{
+    max-width: 100%;
+    height: 50px;
+    background-color: var(--rosa-btn);
+    
 }
 
 #botaoExcluirConta, #botaoAtualizarConta{

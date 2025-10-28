@@ -28,17 +28,22 @@ function Endereco(){
             </nav>
 
             <section className="container-endereco" aria-labelledby="titulo-endereco">
-                <header>
-                <h1 id="titulo-endereco">Olá, {dadosCliente[0]?.name}</h1>
-                <p>Aqui você encontra todas as informações relacionadas aos seus endereços.</p>
+                <header className='container-tituloEndereco'>
+                    <div>
+                        <h1 id="titulo-endereco">Olá, {dadosCliente[0]?.name}</h1>
+                        <p>Aqui você encontra todas as informações relacionadas aos seus endereços.</p>
+                    </div>
+                    
+                    <div>
+                        <Botao
+                            text="Adicionar Endereço +"
+                            aria-label="Adicionar novo endereço"
+                            className="btnAdicionarEndereco"
+                        />
+                    </div>
                 </header>
 
-                <div>
-                <Botao
-                    text="Adicionar Endereço +"
-                    aria-label="Adicionar novo endereço"
-                />
-                </div>
+                
 
                 <section aria-label="Lista de endereços cadastrados">
                     <ul className="container-enderecos">

@@ -1,0 +1,52 @@
+.main-endereco{
+    display: flex;
+}
+
+.container-tituloEndereco{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+.container-navegacaoCliente{
+    width: 100%;
+    max-width: 20%;
+}
+
+.container-endereco{
+    width: 100%;
+    max-width: 80%;
+    height: 65vh;
+    padding:0 10rem;
+}
+
+.container-enderecos{
+    display: flex;
+    padding: 0;
+    gap: 2rem;
+}
+
+.card-endereco{
+    width: 350px;
+    border: solid 2px var(--roxo-card);
+    border-radius: 16px;
+    box-shadow: var(--box-strong);
+}
+
+.container-editarEndereco{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--roxo-card);
+    border: solid var(--roxo-card) 2px;
+    border-radius: 16px 16px 0px 0;
+}
+
+.container-editarEndereco h2{
+    font-size: var(--font-size-xl);
+    font-family: var(--font-secondary);
+    margin-left: .3rem;
+    margin-bottom: 0;
+}
+
