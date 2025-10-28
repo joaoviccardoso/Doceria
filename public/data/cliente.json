@@ -8,13 +8,25 @@
     "status": "ativo",
     "date": "19/10/25",
     "cpf": "472987111-32",
-    "address": {
-      "street": "Rua das Flores",
-      "number": 120,
-      "neighborhood": "Jardim Primavera",
-      "city": "São Paulo",
-      "state": "SP",
-      "cep": "01234-567"
-    }
+    "address": [
+      {
+        "idEndereço": 1,
+        "street": "Rua das Flores",
+        "number": 120,
+        "neighborhood": "Jardim Primavera",
+        "city": "São Paulo",
+        "state": "SP",
+        "cep": "01234-567"
+      },
+      {
+        "idEndereço": 2,
+        "street": "Rua das gramas",
+        "number": 120,
+        "neighborhood": "Jardim Outono",
+        "city": "São Pedro",
+        "state": "RJ",
+        "cep": "01234-765"
+      }
+  ]
   }
 ]

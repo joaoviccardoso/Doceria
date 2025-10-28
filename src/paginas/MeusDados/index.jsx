@@ -14,7 +14,6 @@ function MeusDados(){
                 alert('erro para carregar a mensagem')
             }
             const cliente = await dados.json()
-            console.log(cliente)
             setMeusDados(cliente)
         }
 
