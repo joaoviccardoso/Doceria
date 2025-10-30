@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import './CardInformacao.css';
 import AOS from 'aos';
 import "aos/dist/aos.css";

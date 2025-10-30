@@ -1,8 +1,8 @@
 import Botao from '../Botao'
 import Input from '../Input'
 import './entreContado.css'
-import rapazSegurandoUmBolo from "../../assets/RapazComUmBolaNaMao.png";
-import backgroundMorango from "../../assets/morango-removebg-preview.png";
+import rapazSegurandoUmBolo from "/assets/RapazComUmBolaNaMao.png";
+import backgroundMorango from "/assets/morango-removebg-preview.png";
 
 function EntreContado(){
     return(

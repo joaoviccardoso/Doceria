@@ -1,0 +1,55 @@
+.main-pedidos{
+    display: flex;
+}
+
+#accordionPedidos{
+    height: 100%;
+}
+
+.container-pedido{
+    width: 100%;
+    max-width: 80%;
+    padding: 2rem 10rem;
+}
+
+.ul-pedidoCliente{
+    padding: 0;
+}
+
+.accordion-item{
+    border: 2px solid var(--roxo-card);
+    background-color: var(--letra-clara);
+    box-shadow: var(--box-cards);
+    margin-bottom: .8rem;
+    border-radius: 16px;    
+}
+
+.accordion-header, .accordion-button, .accordion-body, .accordion-collapse{
+    border-radius: 16px;
+}
+
+.accordion-pedido{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-detralhePedido{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container-detralhePedido div{
+    padding: 1rem;
+    background-color: var(--rosa-cards);
+    border-radius: 16px;
+    box-shadow: var(--box-light);
+}
+
+.container-detralhePedido img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}

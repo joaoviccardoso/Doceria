@@ -1,10 +1,10 @@
 import './footer.css'
-import iconeWhatt from "../../assets/whattzap.png";
-import iconePhone from "../../assets/phone 1.png";
-import iconeEmail from "../../assets/envelope 1.png";
-import iconeIntagra from "../../assets/instagram-logo (1) 1.png";
-import iconeX from "../../assets/x-logo 1.png";
-import iconeFace from "../../assets/facebook-logo (1) 1.png";
+import iconeWhatt from "/assets/whattzap.png";
+import iconePhone from "/assets/phone 1.png";
+import iconeEmail from "/assets/envelope 1.png";
+import iconeIntagra from "/assets/instagram-logo (1) 1.png";
+import iconeX from "/assets/x-logo 1.png";
+import iconeFace from "/assets/facebook-logo (1) 1.png";
 
 
 function Footer(){

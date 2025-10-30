@@ -10,15 +10,15 @@ import ProdutoLanding from '../../componentes/CardProdutoLanding';
 import RegistroDePedidosFeitos from '../../componentes/RegistroDePedidosFeitos';
 import AOS from 'aos';
 import EntreContado from '../../componentes/EntreContado';
-import BoloDeMorango from "../../assets/BoloDeMorangoSemFundo.png";
-import iconeDeBolo from "../../assets/bolo.png";
-import iconeCelular from "../../assets/celular.png";
-import iconeBrigadeiro from "../../assets/brigadeiro.png";
-import mocaSegurandoUmBolo from "../../assets/MocaSegurandoUmBolo.png";
-import produtoBrigadeiro from "../../assets/Brigadeiro (2).png";
-import produtoBoloDeLimao from "../../assets/boloDeLimao.png";
-import ProdutoBoloDeMorango from "../../assets/BoloDeMorango.png";
-import backgroundMorango from "../../assets/morango-removebg-preview.png";
+import BoloDeMorango from "/assets/BoloDeMorangoSemFundo.png";
+import iconeDeBolo from "/assets/bolo.png";
+import iconeCelular from "/assets/celular.png";
+import iconeBrigadeiro from "/assets/brigadeiro.png";
+import mocaSegurandoUmBolo from "/assets/MocaSegurandoUmBolo.png";
+import produtoBrigadeiro from "/assets/Brigadeiro (2).png";
+import produtoBoloDeLimao from "/assets/boloDeLimao.png";
+import ProdutoBoloDeMorango from "/assets/BoloDeMorango.png";
+import backgroundMorango from "/assets/morango-removebg-preview.png";
 
 function LandingPage(){
     const carrossel = useRef()

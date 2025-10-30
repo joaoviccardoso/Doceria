@@ -2,13 +2,14 @@
   {
     "orderId": "PED12345",
     "customerId": 1,
-    "date": "2025-01-22T10:30:00",
+    "date": "29/10/25 ás 15:08",
     "items": [
-      { "productTitle": "Bolo de Limão", "quantity": 1, "price": 82.9 },
-      { "productTitle": "Bolo Brigadeiro", "quantity": 1, "price": 89.0 }
+      { "productTitle": "Bolo de Limão", "quantity": 1, "price": 82.9, "image": "/assets/boloDeLimao.png"},
+      { "productTitle": "Bolo Prestígio", "quantity": 1, "price": 89.0, "image": "/assets/BolodeChocolatecomCoco.png"}
     ],
     "total": 171.9,
-    "status": "Entregue"
+    "status": "Entregue",
+    "pagamento": "Pix"
   },
   
   {
@@ -16,9 +17,23 @@
     "customerId": 1,
     "date": "2025-01-23T15:15:00",
     "items": [
-      { "productTitle": "Bolo Red Velvet", "quantity": 1, "price": 88.0 }
+      { "productTitle": "Bolo Red Velvet", "quantity": 1, "price": 88.0 , "image": "/assets/BoloDeRedVelvet.png"}
     ],
     "total": 88.0,
-    "status": "Em preparo"
+    "status": "Em preparo",
+    "pagamento": "Cartão"
+  },
+
+  {
+    "orderId": "PED12347",
+    "customerId": 1,
+    "date": "29/10/25 ás 15:08",
+    "items": [
+      { "productTitle": "Bolo de Limão", "quantity": 1, "price": 82.9, "image": "/assets/boloDeLimao.png"},
+      { "productTitle": "Bolo Prestígio", "quantity": 1, "price": 89.0, "image": "/assets/BolodeChocolatecomCoco.png"}
+    ],
+    "total": 171.9,
+    "status": "Entregue",
+    "pagamento": "Pix"
   }
 ]

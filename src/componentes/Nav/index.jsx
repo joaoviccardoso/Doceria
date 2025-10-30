@@ -1,6 +1,6 @@
 import OffCanvas from '../OffCanvas';
 import './nav.css';
-import logo from '../../assets/logoDoceria.png'
+import logo from '/assets/logoDoceria.png'
 import { Link } from "react-router-dom";
 
 function Nav(){
