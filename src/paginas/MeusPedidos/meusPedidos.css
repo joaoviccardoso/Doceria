@@ -24,6 +24,28 @@
     border-radius: 16px;    
 }
 
+.accordion-pedido p{
+    color: var(--letra-roxa);
+    font-size: var(--font-size-md);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:hover{
+    background-color: #fff;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #fff;
+    box-shadow: none;
+    border-bottom: solid 1px var(--roxo-card);
+    border-radius: 16px 16px 0px 0;
+}
+
 .accordion-header, .accordion-button, .accordion-body, .accordion-collapse{
     border-radius: 16px;
 }
@@ -41,6 +63,9 @@
 }
 
 .container-detralhePedido div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     padding: 1rem;
     background-color: var(--rosa-cards);
     border-radius: 16px;
@@ -52,4 +77,18 @@
     height: 100px;
     border-radius: 50%;
     border: 5px solid #fff;
+}
+
+.container-detralhePedido h5{
+    color: var(--letra-clara);
+    font-size: var(--font-size-xl);
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+.container-detralhePedido p{
+    color: var(--letra-clara);
+    font-size: var(--font-size-xl);
+    font-family: var(--font-secondary);
+    font-weight: 500;
 }

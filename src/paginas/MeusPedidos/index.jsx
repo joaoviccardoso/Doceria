@@ -30,7 +30,7 @@ function MeusPedidos(){
                 <header className='container-tituloEndereco'>
                     <div>
                         <h1 id="titulo-endereco">Olá, João</h1>
-                        <p>Aqui você encontra todas as informações relacionadas aos seus endereços.</p>
+                        <p style={{color : "#212121"}}>Aqui você encontra todas as informações relacionadas aos seus endereços.</p>
                     </div>
                     
                     <div>
@@ -99,6 +99,9 @@ function MeusPedidos(){
                                             return (
                                                 <div key={indexItem}>
                                                     <img src={item.image} alt={item.productTitle}/>
+                                                    <h5>{item.productTitle}</h5>
+                                                    <p>Unidade: {item.quantity}</p>
+                                                    <p>Valor: R${item.price}</p>
                                                 </div>
                                             );
                                             })}

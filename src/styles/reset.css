@@ -43,3 +43,11 @@ img {
   max-width: 100%;
   display: block;
 }
+
+h3 {
+  color: var(--letra-escura);
+}
+
+p{
+  color: var(--letra-escura);
+}

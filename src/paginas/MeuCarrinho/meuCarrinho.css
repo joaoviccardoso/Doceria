@@ -86,12 +86,19 @@
     box-shadow: var(--box-cards);
 }
 
-.lista-valorCarrinho h3, p{
+.lista-valorCarrinho h3{
     color: var(--letra-escura);
     font-family: var(--font-secondary);
     font-weight: 500;
     margin: 0;
 }
+
+.lista-valorCarrinho p{
+    color: var(--letra-escura);
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    margin: 0;
+}   
 
 .lista-valorCarrinho h3{
     font-weight: 700;
