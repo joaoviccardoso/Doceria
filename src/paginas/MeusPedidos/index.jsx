@@ -3,9 +3,13 @@ import MenuCliente from '../../componentes/menuCliente'
 import './meusPedidos.css'
 import InformacoesCliente from '../../componentes/InformacaoDoCliente'
 
+// Componente responsável por exibir os pedidos realizados pelo cliente.
 function MeusPedidos(){
+     // Estado que armazena a lista de pedidos do cliente
     const [pedidosCliente, setPedidosCliente] = useState([])
 
+     // useEffect executado apenas uma vez, após o componente ser montado.
+     // Ele busca os pedidos do cliente a partir de um arquivo JSON.
     useEffect(() => {
         async function PegarValorPedidos(){
             const dados = await fetch('/data/pedidos.json');
@@ -30,9 +34,12 @@ function MeusPedidos(){
 
                 <section className='container-pedidos'>
                     <div className="accordion" id="accordionPedidos">
+                        {/* Mapeia todos os pedidos e cria um item de acordeão para cada um */}
                         {pedidosCliente?.map((pedido, index) => (
                             <div className="accordion-item" key={pedido.orderId}>
                                 <h2 className="accordion-header" id={`heading-${pedido.orderId}`}>
+
+                                     {/* Botão que expande/colapsa os detalhes do pedido */}
                                     <button
                                         className={`accordion-button ${index !== 0 ? 'collapsed' : ''}`}
                                         type="button"
@@ -41,6 +48,8 @@ function MeusPedidos(){
                                         aria-expanded={index === 0 ? 'true' : 'false'}
                                         aria-controls={`collapse-${pedido.orderId}`}
                                     >
+                                    
+                                    {/* Cabeçalho do pedido com informações resumidas */}
                                     <div className="accordion-pedido">
                                         <div className='container-pedidosDados'>
                                             <h5>Pedido</h5>
@@ -70,6 +79,7 @@ function MeusPedidos(){
                                     </button>
                                 </h2>
 
+                                 {/* Corpo do acordeão que exibe os detalhes do pedido */}
                                 <div
                                     id={`collapse-${pedido.orderId}`}
                                     className={`accordion-collapse collapse ${index === 0 ? 'show' : ''}`}

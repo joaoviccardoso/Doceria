@@ -1,12 +1,25 @@
+// Importa o componente Link do React Router, usado para criar links de navegação entre páginas
 import { Link } from 'react-router-dom'
+
 import './minhaConta.css'
+
+// Importa hooks do React:
+// useEffect → executa efeitos colaterais, como buscar dados de uma API
+// useState → armazena e atualiza estados dentro do componente
 import { useEffect, useState } from 'react'
+
 import MenuCliente from '../../componentes/menuCliente'
 
+
+// COMPONENTE PRINCIPAL: MinhaConta
 function MinhaConta() {
+    // Estado para armazenar os dados do usuário
     const [usuario, setUsuario] = useState([])
+
+    // Estado para armazenar os pedidos do usuário
     const [pedidos, setPedidos] = useState([])
 
+    //  useEffect 1: Carregar dados do usuário
     useEffect(() => {
         const fetchUsuario = async () => {
             const resposta = await fetch('/data/cliente.json')
@@ -20,6 +33,7 @@ function MinhaConta() {
         fetchUsuario()
     }, [])
 
+     //  useEffect 2: Carregar pedidos do usuário
     useEffect(() => {
         async function fetchPedidos(){
             const respostaPedidos = await fetch('/data/pedidos.json')
@@ -34,7 +48,7 @@ function MinhaConta() {
         fetchPedidos()
     }, [])
 
-
+    //  Renderização da página
     return(
         <main className='main-navegacaoCliente'>
             <section className='container-navegacaoCliente'>

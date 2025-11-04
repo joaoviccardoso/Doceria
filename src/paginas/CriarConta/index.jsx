@@ -2,9 +2,20 @@ import Botao from '../../componentes/Botao'
 import Input from '../../componentes/Input'
 import './criarConta.css'
 
+/**
+ * Componente: CriarConta
+ * -----------------------
+ * Este componente representa a página de criação de conta do usuário.
+ * Ele exibe um formulário dividido em seções para coleta de dados pessoais
+ * e informações de login, como e-mail e senha.
+ * 
+ * Atualmente, o formulário é apenas visual — não há integração com API nem
+ * tratamento de validação de dados.
+ */
 function CriarConta(){
     return(
         <main className='main-criarConta'>
+            {/* Formulário principal de criação de conta */}
             <form className='container-criarConta'>
                 <div className='container-informacaoCriarConta'>
                     <h2>Crie sua conta pessoal</h2>

@@ -5,9 +5,13 @@ import './meusDados.css'
 import Botao from '../../componentes/Botao'
 import InformacoesCliente from '../../componentes/InformacaoDoCliente'
 
+// Componente responsável por exibir e permitir a edição dos dados pessoais do cliente.
 function MeusDados(){
+    // Estado local que armazena os dados do cliente
     const [meusDados, setMeusDados] = useState([])
 
+    //  useEffect é executado apenas uma vez (ao montar o componente).
+    //  Ele busca as informações do cliente no arquivo /data/cliente.json.
     useEffect(() => {
         const fetchCliente = async () => {
             const dados = await fetch('/data/cliente.json');

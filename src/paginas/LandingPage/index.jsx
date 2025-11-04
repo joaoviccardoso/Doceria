@@ -1,7 +1,10 @@
+// Importação dos estilos e bibliotecas externas
 import './landingPage.css';
 import "aos/dist/aos.css";
 import { useState, useEffect, useRef } from 'react';
 import { motion } from "framer-motion"
+
+// Importação de componentes personalizados
 import Banner from '../../componentes/Banner';
 import CardInformacao from '../../componentes/CardInformacao';
 import Faixa from '../../componentes/Faixa';
@@ -10,6 +13,8 @@ import ProdutoLanding from '../../componentes/CardProdutoLanding';
 import RegistroDePedidosFeitos from '../../componentes/RegistroDePedidosFeitos';
 import AOS from 'aos';
 import EntreContado from '../../componentes/EntreContado';
+
+// Importação de imagens utilizadas na página
 import BoloDeMorango from "/assets/BoloDeMorangoSemFundo.png";
 import iconeDeBolo from "/assets/bolo.png";
 import iconeCelular from "/assets/celular.png";
@@ -20,20 +25,50 @@ import produtoBoloDeLimao from "/assets/boloDeLimao.png";
 import ProdutoBoloDeMorango from "/assets/BoloDeMorango.png";
 import backgroundMorango from "/assets/morango-removebg-preview.png";
 
+/**
+ * Componente: LandingPage
+ * 
+ * Função principal:
+ * Renderizar a página inicial da confeitaria, apresentando os produtos,
+ * diferenciais, registros de pedidos e meios de contato.
+ * 
+ * Tecnologias e bibliotecas usadas:
+ * - React (hooks: useState, useEffect, useRef)
+ * - AOS (animações de rolagem)
+ * - Framer Motion (animação de carrossel)
+ */
+
 function LandingPage(){
+    // Referência usada para calcular o limite de arraste do carrossel
     const carrossel = useRef()
+
+    // Estado que guarda a largura total do carrossel para limitar o movimento horizontal
     const [width, setWidth] = useState(0)
 
+    /**
+     * useEffect 1:
+     * Calcula a diferença entre o tamanho total do carrossel (scrollWidth)
+     * e a largura visível (offsetWidth), limitando o quanto o usuário pode arrastar.
+     */
     useEffect(() => {
         setWidth(carrossel.current?.scrollWidth - carrossel.current?.offsetWidth)
     },[])
 
+    /**
+     * useEffect 2:
+     * Inicializa o AOS (Animate On Scroll) para aplicar as animações
+     * conforme o usuário rola a página.
+     * 
+     * - duration: duração das animações em milissegundos.
+     * - once: garante que a animação acontece apenas uma vez.
+     */
     useEffect(() => {
         AOS.init({
             duration: 1000,
             once: true,
         })
 
+        // Recarrega as animações após o carregamento completo da página
         window.addEventListener("load", () => {
             AOS.refresh()
         })                    
@@ -43,6 +78,7 @@ function LandingPage(){
 
     return (
         <main className='main-landingPage'>  
+            {/* SEÇÃO 1: Banner principal  */}
             <Banner
                 titulo={'O sabor que conquista corações'}
                 texto={'Aqui, cada doce é feito com carinho, ingredientes fresquinhos e uma pitada de criatividade. Do famoso Morango do Amor aos nossos brigadeiros, brownies, cupcakes, tortas e muito mais, temos o sabor perfeito para cada momento especial.'}
@@ -52,6 +88,7 @@ function LandingPage(){
                 className={'imgLandingPage'}
             />
             
+            {/*  SEÇÃO 2: Cards de informação sobre a confeitaria  */}
             <section className='container-informacao'>
                 
                 <Faixa
@@ -87,6 +124,7 @@ function LandingPage(){
                 
             </section>
 
+             {/*  SEÇÃO 3: Apresentação de produtos */}
             <section className='container-maisInformacao'>
                 <div data-aos="fade-up" className='banner-fazerOrcamento'>
                     <span>
@@ -105,6 +143,8 @@ function LandingPage(){
                     />
 
                 </div>
+
+                {/* Cards dos produtos em destaque */}
                 <div className='div-cardProdutos'>
                     <ProdutoLanding
                         img={produtoBrigadeiro}
@@ -131,10 +171,13 @@ function LandingPage(){
                 
             </section>
 
+            {/* SEÇÃO 4: Registros de pedidos feitos (carrossel animado)  */}
             <section className='container-registro'>
                 <img className='backgroundMorango2' src={backgroundMorango} alt="background morango" />
                 <h3>Alguns Registros...</h3>
                 <p>Confira alguns de nossos pedidos e veja como cada doce pode contar historias únicas e tornar momentos inesquecíveis.</p>
+
+                {/* Carrossel com animação via Framer Motion */}
                 <div className='container-carrosel'>
                     <motion.div ref={carrossel} className='carrossel'>
                         <motion.div 
@@ -148,11 +191,13 @@ function LandingPage(){
                 </div>
             </section>
 
+              {/* SEÇÃO 5: Chamada para contato  */}
             <Faixa
                 texto={'Fale com a gente e faça sua encomenda'}
                 texto2={'com carinho e agilidade.'}
             />
 
+            {/* Seção de formulário ou informações de contato */}
             <section className='secao-entreContato'>
                 <EntreContado/>
             </section>

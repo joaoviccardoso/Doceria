@@ -4,9 +4,22 @@ import './endereco.css'
 import Botao from '../../componentes/Botao';
 import InformacoesCliente from '../../componentes/InformacaoDoCliente';
 
+/**
+ * Componente: Endereco
+
+ * Este componente é responsável por exibir os endereços cadastrados de um cliente.
+ * Ele busca os dados de um arquivo JSON local, armazena-os no estado e renderiza
+ * uma lista de cartões com as informações de cada endereço.
+ */
 function Endereco(){
+    // Estado para armazenar os dados do cliente obtidos do arquivo JSON
     const [dadosCliente, setDadosCliente] = useState([]);
 
+     /**
+     * useEffect - Executa a busca dos dados assim que o componente é montado.
+     * A função interna `ChamarCliente` faz a requisição ao arquivo JSON e,
+     * se bem-sucedida, armazena o resultado no estado `dadosCliente`.
+     */
     useEffect( () => {
         async function ChamarCliente(){
             const dados = await fetch('/data/cliente.json')
@@ -21,18 +34,26 @@ function Endereco(){
         ChamarCliente()
     }, [])
 
+     /**
+     * Renderização do componente principal.
+     * O layout é dividido em:
+     * 1. Menu lateral de navegação do cliente.
+     * 2. Área principal contendo as informações do cliente e seus endereços.
+     */
     return(
        
         <main className='main-endereco'>
+            {/* Menu lateral com as opções do cliente */}
             <nav className="container-navegacaoCliente" aria-label="Menu do cliente">
                 <MenuCliente />
             </nav>
 
+            {/* Área principal onde são exibidas as informações do cliente e seus endereços */}
             <section className="container-endereco" aria-labelledby="titulo-endereco">
+                {/* Exibe informações de texto*/}
                 <InformacoesCliente/>
 
-                
-
+                {/* Lista de endereços cadastrados */}
                 <section aria-label="Lista de endereços cadastrados">
                     <ul className="container-enderecos">
                         {dadosCliente[0]?.address?.map((endereco) => (

@@ -1,9 +1,15 @@
 import './App.css'
 import { BrowserRouter , Routes, Route} from 'react-router-dom'
+
+// Importa as ferramentas de roteamento do React Router
 import Cardapio from './paginas/Cardapio'
 import LandingPage from './paginas/LandingPage'
+
+// Importa os componentes fixos de layout
 import Cabecalho from './componentes/Nav'
 import Footer from './componentes/Footer'
+
+// Importa as páginas da aplicação
 import PaginaNaoEncontrada from './paginas/paginaNaoEncontrada'
 import CadastroLogin from './paginas/CadastroLogin'
 import CriarConta from './paginas/CriarConta'
@@ -15,13 +21,20 @@ import MeusDados from './paginas/MeusDados'
 import Favoritos from './paginas/FavoritoCliente'
 import Endereco from './paginas/EnderecoCliente'
 
+
+// Função principal do aplicativo React
+// É o componente raiz que organiza toda a estrutura da aplicação
 function App() {
   return (
+
+    // BrowserRouter envolve toda a aplicação
+    // Permite que o React Router controle as rotas sem recarregar a página
     <BrowserRouter>
       <header>
         <Cabecalho/>
       </header>
       
+        {/* Definição das rotas da aplicação */}
         <Routes>
           <Route path='/' element={<LandingPage/>}/>
           <Route path='/cardapio' element={<Cardapio/>}/>

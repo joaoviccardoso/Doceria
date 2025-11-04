@@ -4,9 +4,26 @@ import './meuCarrinho.css'
 import { getCarrinho, removeFromCarrinho } from "../../servicos/CarrinhoLocalStorage";
 import { Link } from 'react-router-dom';
 
+
+/**
+ * Componente: MeuCarrinho
+ * 
+ * Este componente é responsável por exibir os produtos adicionados ao carrinho
+ * e permitir que o usuário visualize o resumo do pedido antes de finalizar a compra.
+ * 
+ * Funcionalidades principais:
+ * - Carrega os itens salvos no carrinho (armazenados no LocalStorage).
+ * - Exibe cada produto com suas informações básicas.
+ * - Permite remover itens individualmente do carrinho.
+ * - Mostra um resumo com o total do pedido e um botão para ir ao checkout.
+ */
+
 function MeuCarrinho(){
+     // Estado que armazena o conteúdo atual do carrinho
     const [carrinho, setCarrinho] = useState({ items: [] })
 
+    //useEffect executa apenas uma vez ao carregar o componente.
+    //Busca os dados do carrinho salvos no LocalStorage através da função getCarrinho().
     useEffect(() => {
         const localStorage = getCarrinho()
         setCarrinho(localStorage)
@@ -14,9 +31,13 @@ function MeuCarrinho(){
 
     return(
         <main className='main-carrinho'>
+
+            {/* Seção principal dos itens do carrinho */}
             <section className='container-meusPedidos'>
                 <section className='container-cardsMeusPedidos'>
                     <h2>Meu Carrinho</h2>
+
+                    {/* Mapeia e renderiza cada produto do carrinho */}
                     {carrinho.items.map(item => (
                         <div key={item.id} className="card-item">
                             
@@ -37,6 +58,7 @@ function MeuCarrinho(){
                 </section>
             </section>
 
+            {/* Seção com o resumo do pedido (valores estáticos por enquanto) */}
             <section className='container-valorTotal'>
                 <ul className='lista-valorCarrinho'>
                     <li><h3>Resumo do Pedido</h3></li>

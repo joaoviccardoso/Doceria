@@ -2,13 +2,27 @@
 import Input from '../../componentes/Input'
 import './checkOut.css'
 
+/**
+ * Componente: CheckOut
+ * -----------------------
+ * Este componente representa a página de finalização de compra.
+ * 
+ * Ele contém:
+ * - Um formulário para preenchimento das informações de entrega e pagamento.
+ * - Um resumo do pedido com valores totais.
+ * 
+ * Atualmente, o formulário é estático — ainda não há integração com APIs
+ * ou cálculos dinâmicos de valores.
+ */
 function CheckOut(){
     return (
         <main className='main-checkout'>
+            {/* Seção principal contendo o formulário de checkout */}
             <section className='container-checkout'>
                 <form action="" className='form-checkout'>
                     <h2>CheckOut</h2>
                     <hr />
+                    {/* Seção de informações de entrega do pedido */}
                     <div className='informacao-entrega'>
                         <h3>Informaçoes de Entrega</h3>
                         <Input 
@@ -60,6 +74,7 @@ function CheckOut(){
                         />
                     </div>
 
+                    {/* Seção de métodos de pagamento */}
                     <div className='informacao-pagamento'>
                         <h3>Metodo de Pagamento</h3>
                         <div className='container-formaDePagamento'>
@@ -71,6 +86,7 @@ function CheckOut(){
                             </span>
                         </div>
 
+                        {/* Opção 2 - Pagamento com Cartão de Crédito/Débito */}
                         <div className='container-formaDePagamento'>
                             <span>
                                 <Input
@@ -78,6 +94,8 @@ function CheckOut(){
                                 />
                                 <p>Credit / Debit Card</p>
                             </span>
+
+                            {/* Campos adicionais para informações do cartão */}
                             <div className='informacao-pagamentoCard'>
                                 <Input 
                                     tipo={'number'}
@@ -108,6 +126,7 @@ function CheckOut(){
                 </form>
             </section>
 
+            {/* Seção lateral com resumo do pedido */}
             <section className='container-valorTotal'>
                 <ul className='lista-valorCarrinho'>
                     <li><h3>Resumo do Pedido</h3></li>
