@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--roxo-banner); 
+    margin-top: 5rem;
 }
 
 .secao-informacao-contato{

@@ -5,6 +5,7 @@ import MenuCliente from '../../componentes/menuCliente'
 
 function MinhaConta() {
     const [usuario, setUsuario] = useState([])
+    const [pedidos, setPedidos] = useState([])
 
     useEffect(() => {
         const fetchUsuario = async () => {
@@ -19,6 +20,21 @@ function MinhaConta() {
         fetchUsuario()
     }, [])
 
+    useEffect(() => {
+        async function fetchPedidos(){
+            const respostaPedidos = await fetch('/data/pedidos.json')
+            if(!respostaPedidos.ok){
+                alert('erro para carregar a mensagem')
+            }
+            const pedidos = await respostaPedidos.json()
+            console.log(pedidos)
+            setPedidos(pedidos)
+        }
+
+        fetchPedidos()
+    }, [])
+
+
     return(
         <main className='main-navegacaoCliente'>
             <section className='container-navegacaoCliente'>
@@ -28,7 +44,7 @@ function MinhaConta() {
             <section className='container-infomacaoCliente'>
                 <div className='container-tituloInformacaoCliente'>
                     <h3>Olá, Joao</h3>
-                    <p>Aqui você encontra todas as informações relacionadas a sua conta.</p>
+                    <p style={{color : "#212121"}}>Aqui você encontra todas as informações relacionadas a sua conta.</p>
                 </div>
                 
                 <ul className='ul-infomacaoCliente'>
@@ -69,7 +85,8 @@ function MinhaConta() {
                         <Link className='link-infomacaoCliente' to={'/minhaConta/meusPedidos'}>
                             Meus Pedidos 
                             <div className='container-informacaoDePedido'>
-                                <div className='titulo-informacoes'><h4>Ultimo pedido</h4></div>
+                                <div className='titulo-informacoes'><h4 className='h4-titulosMinhaConta'>Ultimo pedido</h4></div>
+                                <p>{pedidos?.length}</p>
                             </div>
                         </Link>
                     </li>
@@ -78,12 +95,12 @@ function MinhaConta() {
                         <Link className='link-infomacaoCliente' to={'/minhaConta/endereco'}>
                             Endereço 
                             <div className='container-informacaoDeEndereco'>
-                                <div className='titulo-informacoes container-adicionarEndereco'><h4>Meu Endereço</h4> <h4>+ Adicionar Endereço</h4> </div>
+                                <div className='titulo-informacoes container-adicionarEndereco'><h4 className='h4-titulosMinhaConta'>Meu Endereço</h4></div>
 
-                                <h4 className='h4-titulosMinhaConta'>{usuario[0]?.address.street}</h4>
-                                <h4 className='h4-titulosMinhaConta'>{usuario[0]?.address.number}</h4>
-                                <h4 className='h4-titulosMinhaConta'>{usuario[0]?.address.neighborhood}</h4>
-                                <h4 className='h4-titulosMinhaConta'>{usuario[0]?.address.city} - {usuario[0]?.address.state} - {usuario[0]?.address.cep}</h4>
+                                <h4 className='h4-titulosMinhaConta'>{usuario[0]?.address[0].street}</h4>
+                                <h4 className='h4-titulosMinhaConta'>{usuario[0]?.address[0].number}</h4>
+                                <h4 className='h4-titulosMinhaConta'>{usuario[0]?.address[0].neighborhood}</h4>
+                                <h4 className='h4-titulosMinhaConta'>{usuario[0]?.address[0].city} - {usuario[0]?.address[0].state} - {usuario[0]?.address[0].cep}</h4>
                              </div>
                         </Link>
                     </li>

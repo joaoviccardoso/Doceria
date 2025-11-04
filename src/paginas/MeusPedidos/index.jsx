@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import MenuCliente from '../../componentes/menuCliente'
 import './meusPedidos.css'
-import Botao from '../../componentes/Botao'
+import InformacoesCliente from '../../componentes/InformacaoDoCliente'
 
 function MeusPedidos(){
     const [pedidosCliente, setPedidosCliente] = useState([])
@@ -14,7 +14,6 @@ function MeusPedidos(){
             }
             const pedidosClenteDados = await dados.json()
             setPedidosCliente(pedidosClenteDados)
-            console.log(pedidosClenteDados)
         }
 
         PegarValorPedidos()
@@ -27,20 +26,7 @@ function MeusPedidos(){
             </nav>
 
             <section className='container-pedido'>
-                <header className='container-tituloEndereco'>
-                    <div>
-                        <h1 id="titulo-endereco">Olá, João</h1>
-                        <p style={{color : "#212121"}}>Aqui você encontra todas as informações relacionadas aos seus endereços.</p>
-                    </div>
-                    
-                    <div>
-                        <Botao
-                            text="Adicionar Endereço +"
-                            aria-label="Adicionar novo endereço"
-                            className="btnAdicionarEndereco"
-                        />
-                    </div>
-                </header>
+                <InformacoesCliente/>
 
                 <section className='container-pedidos'>
                     <div className="accordion" id="accordionPedidos">

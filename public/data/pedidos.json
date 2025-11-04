@@ -35,5 +35,19 @@
     "total": 171.9,
     "status": "Entregue",
     "pagamento": "Pix"
+  },
+
+  {
+    "orderId": "PED12349",
+    "customerId": 1,
+    "date": "29/10/25 ás 15:10",
+    "items": [
+      { "productTitle": "Bolo de Limão", "quantity": 1, "price": 82.9, "image": "/assets/boloDeLimao.png"},
+      { "productTitle": "Bolo Prestígio", "quantity": 1, "price": 89.0, "image": "/assets/BolodeChocolatecomCoco.png"},
+      { "productTitle": "Bolo Prestígio", "quantity": 1, "price": 89.0, "image": "/assets/BolodeChocolatecomCoco.png"}
+    ],
+    "total": 250,
+    "status": "Entregue",
+    "pagamento": "Dinheiro"
   }
 ]

@@ -2,13 +2,6 @@
     display: flex;
 }
 
-.container-tituloEndereco{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2.5rem 0;
-}
-
 .container-navegacaoCliente{
     width: 100%;
     max-width: 20%;

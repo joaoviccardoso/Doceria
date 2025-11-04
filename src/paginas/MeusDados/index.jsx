@@ -3,6 +3,7 @@ import Input from '../../componentes/Input'
 import MenuCliente from '../../componentes/menuCliente'
 import './meusDados.css'
 import Botao from '../../componentes/Botao'
+import InformacoesCliente from '../../componentes/InformacaoDoCliente'
 
 function MeusDados(){
     const [meusDados, setMeusDados] = useState([])
@@ -27,10 +28,9 @@ function MeusDados(){
             </section>
 
             <section className='container-meusDados'>
-                <div>
-                    <h2>Olá, {meusDados[0]?.name}</h2>
-                    <p>Aqui você encontra todas as informações relacionadas a sua conta.</p>
-                </div>
+
+                <InformacoesCliente/>
+
                 <form action="" className='form-meusDados'>
 
                     <div className='containerForm-NomeCliente'>
