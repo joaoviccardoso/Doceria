@@ -1,7 +1,7 @@
 [
  {
     "id": 1,
-    "image": "./src/assets/boloDeLimao.png",
+    "image": "/assets/boloDeLimao.png",
     "title": "Bolo de Limão",
     "type": "Bolo",
     "description": "Bolo de chocolate com recheio trufado e cobertura cremosa de ganache.",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "image": "./src/assets/BoloDeMorango.png",
+    "image": "/assets/BoloDeMorango.png",
     "title": "Bolo de Morango com Chantilly",
     "type": "Bolo",
     "description": "Massa branca leve, recheio de morangos frescos e cobertura de chantilly.",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "image": "./src/assets/BolodeChocolatecomCoco.png",
+    "image": "/assets/BolodeChocolatecomCoco.png",
     "title": "Bolo Prestígio",
     "type": "Bolo",
     "description": "Combinação irresistível de chocolate e coco, com cobertura cremosa.",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "image": "./src/assets/BolodeLeiteNinhocomNutella.png",
+    "image": "/assets/BolodeLeiteNinhocomNutella.png",
     "title": "Bolo de Leite Ninho com Nutella",
     "type": "Bolo",
     "description": "Camadas de massa branca, recheadas com creme de leite ninho e Nutella.",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "image": "./src/assets/BoloDeRedVelvet.png",
+    "image": "/assets/BoloDeRedVelvet.png",
     "title": "Bolo Red Velvet",
     "type": "Bolo",
     "description": "Clássico bolo americano de massa aveludada vermelha e recheio de cream cheese.",

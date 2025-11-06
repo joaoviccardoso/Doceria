@@ -1,0 +1,20 @@
+.main-favoritos{
+    display: flex;
+}
+
+.container-navegacaoCliente{
+    width: 100%;
+    max-width: 20%;
+}
+
+.container-produtosFavoritos{
+    width: 100%;
+    max-width: 80%;
+    padding: 0 15rem;
+}
+
+.container-favoritos{
+    display: flex;
+    gap: 2rem;
+
+}

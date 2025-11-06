@@ -1,0 +1,20 @@
+[
+ {
+    "idItemFavorito": 1,
+    "customerId": 1,
+    "image": "/assets/boloDeLimao.png",
+    "title": "Bolo de Limão",
+    "type": "Bolo",
+    "description": "Bolo de chocolate com recheio trufado e cobertura cremosa de ganache.",
+    "price": 82.90
+  },
+  {
+    "idItemFavorito": 2,
+    "customerId": 1,
+    "image": "/assets/BoloDeMorango.png",
+    "title": "Bolo de Morango com Chantilly",
+    "type": "Bolo",
+    "description": "Massa branca leve, recheio de morangos frescos e cobertura de chantilly.",
+    "price": 78.00
+  }
+]
