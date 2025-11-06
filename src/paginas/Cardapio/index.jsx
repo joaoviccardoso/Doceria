@@ -5,7 +5,7 @@ import AOS from 'aos';
 import mocaBanner from '/assets/MocaFazendoUmBolo.png'
 import Banner from '../../componentes/Banner'
 import Faixa from '../../componentes/Faixa'
-import Card from '../../componentes/Card'
+import CardCardapio from '../../componentes/CardCardapio';
 
 // Componente principal da página "Cardápio"
 function Cardapio(){
@@ -65,7 +65,7 @@ function Cardapio(){
 
                     {/* Container principal onde são exibidos os cards de produtos */}
                     <div className='containerCardapio'>
-                        <Card/>
+                        <CardCardapio/>
                     </div>
 
                 </section>

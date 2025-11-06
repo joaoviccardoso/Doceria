@@ -1,36 +1,9 @@
+import './card.css';
 import Botao from '../Botao';
-import './card.css'
-import { useEffect, useState } from 'react'
 import { addToCarrinho } from "../../servicos/CarrinhoLocalStorage";
 
-function Card(){
-    const [produtos, setProduto] = useState([]);
-
-    useEffect(() => {
-        const fetchProdutos = async () => {
-            try {
-                const resposta = await fetch('/data/produto.json')
-                if(!resposta.ok){
-                    alert('erro para carregar a mensagem')
-                }
-                const data = await resposta.json()
-                setProduto(data)
-                console.log('Produtos carregados:', data);
-            } catch (error) {
-                alert('erro para consumir a api', error)
-            }
-        }
-
-        fetchProdutos();
-    }, [])
-
-    useEffect(() => {
-        console.log('Produtos atualizados:', produtos);
-    }, [produtos]);
-
-   return (
-    <div className='container-card'>
-        {produtos.map(produto => (
+function Card({produto}){
+    return(
         <article className='card' key={produto.id}>
             <div className='container-card-img'>
                 <img src={produto.image} alt={produto.type} className='imgProduto'/>
@@ -51,10 +24,7 @@ function Card(){
             </div>
             
         </article>
-        ))}
-    </div>
-)
-
+    )
 }
 
 export default Card
