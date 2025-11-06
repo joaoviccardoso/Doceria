@@ -25,14 +25,14 @@
     border: solid 2px var(--roxo-card);
     border-radius: 16px;
     box-shadow: var(--box-strong);
+    background-color: var(--roxo-card);
 }
 
 .container-editarEndereco{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--roxo-card);
-    border: solid var(--roxo-card) 2px;
+    margin: .4rem 0;
     border-radius: 16px 16px 0px 0;
 }
 
@@ -41,5 +41,23 @@
     font-family: var(--font-secondary);
     margin-left: .3rem;
     margin-bottom: 0;
+}
+
+.container-editarEndereco div{
+    display: flex;
+    gap: 1rem;
+    margin-right: .3rem;
+}
+
+.container-dadosEndereco{
+     background-color: var(--rosa-backGround);
+}
+
+.container-dadosEndereco p{
+    font-size: var(--font-size-lg);
+    font-family: var(--font-secondary);
+    color: var(--letra-escura);
+    margin-left: .5rem;
+    
 }
 
