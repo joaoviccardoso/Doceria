@@ -20,10 +20,11 @@
 }
 /**/
 .link-navegacaoCliente{
+    font-size: var(--font-size-xl);
     padding: .5rem;
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 80px;
 }
 /**/
 .ul-navegacaoCliente li:last-child:hover{

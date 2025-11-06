@@ -1,4 +1,4 @@
-.verCardapio, .btn-banner, .botao-finalizarPedido, .btnExcluirEhEditarConta, .btnAdicionarEndereco{
+.verCardapio, .btn-banner, .botao-finalizarPedido, .btnExcluirEhEditarConta, .btnAdicionarEndereco, .btn-adicionar{
     width: 100%;
     border-radius: 16px;
     box-shadow: var(--box-light);
@@ -6,11 +6,25 @@
                 transform 0.2s ease;
 }
 
+.btn-adicionar{
+    max-width: 50%;
+    height: 40px;
+    background-color: var(--rosa-backGround);
+    border: solid var(--rosa-btn) 2px;
+    color: var(--letra-escura);
+    font-size: var(--font-size-lg);
+}
+
+.btn-adicionar:hover{
+    color: var(--letra-clara);
+    background-color: var(--rosa-btn);
+    transform: scale(1.03);
+}
+
 .btnAdicionarEndereco{
     max-width: 100%;
     height: 50px;
     background-color: var(--rosa-btn);
-    
 }
 
 #botaoExcluirConta, #botaoAtualizarConta{
@@ -53,7 +67,7 @@
     background-color: var(--rosa-btn);
 }
 
-.verCardapio:hover, .btn-adicionar:hover, .btn-banner:hover, .botao-finalizarPedido:hover {
+.verCardapio:hover, .btn-banner:hover, .botao-finalizarPedido:hover {
     background-color: var(--rosa-btn-hover); 
     transform: scale(1.03);
 }
